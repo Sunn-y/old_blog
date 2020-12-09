@@ -1,0 +1,14 @@
+# Site
+title: Sunny Days
+description: Better than I was yesterday!
+baseurl: ""
+url: https://sunn-y.github.io/
+
+#Jekyll
+permalink: /:categories/:title/
+plugins:
+  - jekyll-feed
+
+#Social
+email: in.wise.nature@gmail.com
+github_username: Sunn-y

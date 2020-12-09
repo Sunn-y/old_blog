@@ -1,0 +1,20 @@
+<header>
+<div class="navigation">
+<table id="app_bar" width="100%">
+    <tr>
+        <td id="logo" onclick="location.href='home'">
+            <span>
+                <img class="bottom_align" src="/assets/img/sunny.png" width="30vw">
+                {{site.title}}
+            </span>
+        </td>
+        {% for page in site.pages %}
+        <td class="pages"><a href="{{ page.url }}">{{ page.title }}</a></td>
+        {% endfor %}
+        <th>
+        <i class="bottom_align page_icon fas fa-bars"/></i>
+        </th>
+    </tr>
+</table>
+</div>
+</header>

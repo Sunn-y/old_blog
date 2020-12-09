@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript">
+        var nav = document.getElementsByClassName("navigation");
+        window.onscroll = function sticky() {
+          if(window.pageYOffset > nav[0].offsetTop) {
+            nav[0].classList.add("nav");
+          } else {
+            nav[0].classList.remove("nav");
+          }
+        }
+      </script>
+</head>
+<body>
+    {% include header.html %} 
+    <!-- {% include header.html color="coral"%}  -->
+    <!-- 사이트 헤드 컬러를 다 다르게 하고 싶을 때 -->
+    <div id="body">
+    {{ content }}
+    </div>
+</body>
+</html>
