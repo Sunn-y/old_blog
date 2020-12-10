@@ -1,41 +1,36 @@
 <nav>
     <div class="nav_grid">
-    <ul class="menu">
-        {% for page in site.pages %}
-        <li><a href="{{ page.url }}">{{page.title}}</a>
-        </li>
-        {% endfor %}
-
-            <!-- <li>about</li>
-            <li>learning
+        <br>
+        <ul class="menu">
+            {% for main in site.data.pages.menu %}
+        <li><a style="{% if page.url == main.url %}color: #ff8080;{% endif %}"
+                href="{{ main.url }}">
+            {{ main.name }} </a> 
+                {% if main.name == 'LEARNINGS' or 
+                        main.name == 'REVIEWS' or 
+                        main.name == 'TRIPS' or 
+                        main.name == 'LIKES' or 
+                        main.name == 'THOUGHTS'
+                %}
+                &nbsp;&nbsp;<b class="hover">+</b>
+                {% endif %}
                 <ul class="sub_menu">
-                    <li>- programming</li>
-                    <li>- psychology</li>
-                    <li>- english</li>
+                {% for sub in main.categories %}
+                <li  class="{{ sub.name }}">
+                    <a style="{% if page.url == sub.url %}color: #ff8080;{% endif %}" 
+                    href="{{ sub.url }}">- {{ sub.name }}</a><br>
+                </li>
+                {% endfor%}
                 </ul>
             </li>
-            <li>reviews
-            <ul class="sub_menu">
-                <li>- books</li>
-                <li>- movies</li>
-            </ul>
-        </li>
-            <li>thoughts
-            <li>travels
-            <ul class="sub_menu">
-                <li>- Asia</li>
-                <li>- Europe</li>
-            </ul>
-        </li>
-        </li> -->
-    </ul>
+            {% endfor %}
+        </ul>
     <footer>
         <div class="center_container">
         Copyright©2020. Sunny.<br>All rights reserved.<br><br>
-        <a href="http://github.com/{{site.github_username}}" target="_blank">
+        <a href="http://github.com/{{ site.github_username }}" target="_blank">
         <i class="med_i fab fa-github"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="mailto:{{site.email}}" target="_blank"></a>
-            <i class="med_i far fa-envelope"></i>
+        <a href="mailto:{{ site.email }}"> <i class="med_i far fa-envelope"></i></a>
     </div>
     </footer>
     </div>

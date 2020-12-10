@@ -25,10 +25,29 @@
             $("nav").hide();
             $("main").css("width","100vw");
         };
+
+        //
         $(document).ready(function(){
+            //set
             if($(window).innerWidth() >= 1200){
                 show_nav();
             };
+
+            let now_path = $(location).attr('pathname').toUpperCase().replaceAll('/','');
+            let active_page = '';
+            $(".menu>li>ul>li").find("a").each(function(index, item){
+                if(now_path == $(item).text().replace('- ','')){
+                    active_page = $(item).text().replace('- ','');
+                }
+            });
+            $(".sub_menu").hide();
+            if(now_path == active_page){
+                let class_name = '';
+                class_name = '.'.concat(now_path);
+                $(class_name).parent().show();
+            }
+
+            // event
             $(window).resize(function(){
                 if($(window).innerWidth() >= 1200){
                     show_nav();
@@ -48,21 +67,22 @@
             $(".center_container").click(function(){
                 if($(window).innerWidth() < 1200){
                 hide_nav();
-            };
+                 };
             });
-            $(".sub_menu").hide();
             $(".menu>li").click(function(){
-                console.log($(this).find(".sub_menu").length);
+                $(".sub_menu").slideUp();
                 if($(this).find(".sub_menu").length == 1){
                     if($(this).children(".sub_menu").is(":visible") != true){
-                        $(this).children("a").css("color","#ff8080");
                         $(this).children(".sub_menu").slideDown();
                     }
                     else{
-                        $(this).children("a").css("color","#666666");
                         $(this).children(".sub_menu").slideUp();
                     }
                 }
+            });
+            $('.up_btn').click(function(){
+                $('html, body').animate( { scrollTop : 0 }, 400 );
+	return false;
             });
         });
     </script>
@@ -71,14 +91,13 @@
     <div class="wrapper">
         {% include navigation.html %} 
         <main>
-            <div id="up"></div>
             <div class="nav_toggle">
-                    <i class="big_i fas fa-bars"></i>
-                </div>
-                <div class="center_container">
-                    {{ content }}
-                </div>
-                <a class="up_btn" href="#up"><i class="big_i fas fa-chevron-circle-up"></i></a>
+                <i class="big_i fas fa-bars"></i>
+            </div>
+            <div class="center_container">
+                {{ content }}
+            </div>
+            <i class="up_btn big_i fas fa-chevron-circle-up"></i>
         </main>
     </div>
 </body>

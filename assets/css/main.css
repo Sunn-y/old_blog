@@ -72,12 +72,12 @@ footer{
 .menu{
     color: #666666;
     grid-area: menu;
-    font-size: xx-large;
+    font-size: 1.5em;
     margin: 0;
     padding: 0 10%;
 }
 .sub_menu{
-    font-size: x-large;
+    font-size: large;
 }
 .big_i{
     color: #666666;
@@ -88,7 +88,11 @@ footer{
     font-size: 1.5em;
 }
 
-.big_i:hover, .med_i:hover, a:hover{
+.hover{
+    font-size: 1.2em;
+}
+
+.big_i:hover, .med_i:hover, a:hover, .hover:hover{
     cursor: pointer;
     color:#ff8080;
 } 

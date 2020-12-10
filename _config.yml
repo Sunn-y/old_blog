@@ -9,6 +9,12 @@ permalink: /:categories/:title
 author: "Sunny"
 plugins:
   - jekyll-feed
+defaults:
+  - scope:
+      path: ""
+      type: "post"
+    values:
+      layout: "post"
 
 #Social
 email: in.wise.nature@gmail.com

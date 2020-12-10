@@ -1,5 +1,5 @@
 ---
 layout: reviews
-title: REVIEWS
+title: reviews
 permalink: /reviews/
 ---

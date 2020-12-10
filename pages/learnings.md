@@ -1,5 +1,5 @@
 ---
 layout: learnings
-title: LEARNINGS
+title: learnings
 permalink: /learnings/
 ---
