@@ -4,28 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }}</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
-        var nav = document.getElementsByClassName("navigation");
-        window.onscroll = function sticky() {
-          if(window.pageYOffset > nav[0].offsetTop) {
-            nav[0].classList.add("nav");
-          } else {
-            nav[0].classList.remove("nav");
-          }
-        }
-      </script>
+        function show_nav(){
+            let now_width = $(window).innerWidth();
+            if(now_width >= 1200){
+                $("main").css("width",now_width-250);
+                $("nav").show();
+            }
+            else{
+                $("nav").show();
+            }
+        };
+        function hide_nav(){
+            $("nav").hide();
+            $("main").css("width","100vw");
+        };
+        $(document).ready(function(){
+            if($(window).innerWidth() >= 1200){
+                show_nav();
+            };
+            $(window).resize(function(){
+                if($(window).innerWidth() >= 1200){
+                    show_nav();
+                }
+                else{
+                    hide_nav();
+                }
+            });
+            $(".nav_toggle").click(function(){
+                if($("nav").is(":visible") != true){
+                    show_nav();
+                }
+                else{
+                    hide_nav();
+                }
+            });
+            $(".center_container").click(function(){
+                if($(window).innerWidth() < 1200){
+                hide_nav();
+            };
+            });
+            $(".sub_menu").hide();
+            $(".menu>li").click(function(){
+                console.log($(this).find(".sub_menu").length);
+                if($(this).find(".sub_menu").length == 1){
+                    if($(this).children(".sub_menu").is(":visible") != true){
+                        $(this).children("a").css("color","#ff8080");
+                        $(this).children(".sub_menu").slideDown();
+                    }
+                    else{
+                        $(this).children("a").css("color","#666666");
+                        $(this).children(".sub_menu").slideUp();
+                    }
+                }
+            });
+        });
+    </script>
 </head>
 <body>
-    {% include header.html %} 
-    <!-- {% include header.html color="coral"%}  -->
-    <!-- 사이트 헤드 컬러를 다 다르게 하고 싶을 때 -->
-    <div id="body">
-    {{ content }}
+    <div class="wrapper">
+        {% include navigation.html %} 
+        <main>
+            <div id="up"></div>
+            <div class="nav_toggle">
+                    <i class="big_i fas fa-bars"></i>
+                </div>
+                <div class="center_container">
+                    {{ content }}
+                </div>
+                <a class="up_btn" href="#up"><i class="big_i fas fa-chevron-circle-up"></i></a>
+        </main>
     </div>
 </body>
 </html>

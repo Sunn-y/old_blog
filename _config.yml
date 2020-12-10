@@ -5,7 +5,8 @@ baseurl: ""
 url: https://sunn-y.github.io/
 
 #Jekyll
-permalink: /:categories/:title/
+permalink: /:categories/:title
+author: "Sunny"
 plugins:
   - jekyll-feed
 

@@ -1,61 +1,120 @@
+/* container, wrapper */
 body{
     margin: 0;
-    background-color: #ffcccc;
-    font-family: 'Nanum Pen Script', cursive;
+    font-family: Candara,'Poor Story', cursive;
 }
-i{
-    color: #ff8080;
+.wrapper{
+    padding: 0;
+    margin: 0;
 }
-i:hover, a:hover{
-    cursor:pointer; 
-    color: #660000;
+main{
+    float: right;
+    color: #666666;
+    width: 100vw;
 }
-#body{
-    position: absolute; 
-    left: 3vw;
-    top: 7vh;
-    width: 94vw;
-    background-color: white;
-    background-size: 100% 100%;
-    background-position: center;
-}
-a {
-    text-decoration: none;
-    color: #ff8080;
-}
-#app_bar{
-    display: fixed;
-    margin: 0; 
+.center_container{
     text-align: center;
-    vertical-align: middle;
+    padding: 5% 10%;
+    height: 100vh;
+}
+.text_container{
+    margin: 0 auto;
+    width: 60%;
+    text-align: left;
+}
+.container{
+    color: #666666;
+}
+
+/* include */
+nav{
+    background-color:#ffe6e6;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 5;
+    display: none;
+}
+nav li {
+    list-style-type: none;
+}
+footer{
+    grid-area: footer;
+    color: #666666;
+    font-size: large;
+    align-items: end;
+}
+.up_btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 5;
+}
+.nav_toggle{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5; 
+}
+.nav_grid{
+    display: grid;
+    padding: 0;
+    height: 100vh;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas:
+    "none" 
+    "menu" "menu" "menu" "menu" "menu" "menu" "menu" "menu" "menu"
+     "footer" "footer";
+}
+.menu{
+    color: #666666;
+    grid-area: menu;
+    font-size: xx-large;
+    margin: 0;
+    padding: 0 10%;
+}
+.sub_menu{
+    font-size: x-large;
+}
+.big_i{
+    color: #666666;
     font-size: 2em;
 }
-
-#app_bar td{
-    padding-right: 2vw;
+.med_i{
+    color: #666666;
+    font-size: 1.5em;
 }
 
-.bottom_align{
-    vertical-align: text-bottom;
-}
-
-#logo{
-    text-shadow: 2px 2px 2px gray; 
-    color: white;
-}
-#logo:hover{
+.big_i:hover, .med_i:hover, a:hover{
     cursor: pointer;
-    text-shadow: 2px 2px 2px black; 
+    color:#ff8080;
+} 
+
+.logo{
+    margin: 0 auto;
 }
 
-@media(max-width:768px){
-    #app_bar .pages {
-        visibility: hidden;
-    }
+/* common */
+
+i{
+    font-size: xx-small;
 }
 
-@media(min-width:768px){
-    .page_icon {
-        visibility: hidden;
-    }
+a {
+    text-decoration: none;
+    color: #666666;
 }
+hr{
+    width: 60%;
+    color: #666666;
+    margin-bottom: 5%;
+}
+
+.flat{
+    margin: 0;
+    padding: 0;
+}
+
