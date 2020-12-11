@@ -1,6 +1,6 @@
 menu:
   - name: "HOME"
-    url: "/"
+    url: "/home"
   - name: "ABOUT"
     url: "/about/"
   - name: "LEARNINGS"

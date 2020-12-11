@@ -2,20 +2,3 @@
 layout: wrapper
 ---
 
-<h1>this is home</h1>
-<hr>
-<ul class="menu">
-{% for main in site.data.pages.menu %}
-<li><a href="{{ main.url }}">{{ main.name }} </a>
-    <ul class="sub_menu">
-    {% for sub in main.categories %}
-    <li>
-        <a href="{{ main.url }}{{ sub.url }}">- {{ sub.name }}</a><br>
-    </li>
-    {% endfor%}
-    </ul>
-</li>
-{% endfor %}
-</ul>
-
-

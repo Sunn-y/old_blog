@@ -10,12 +10,13 @@ body{
 main{
     float: right;
     color: #666666;
-    width: 100vw;
+    width: 100vh;
+    
+    padding-top: 2%;
 }
 .center_container{
     text-align: center;
-    padding: 5% 10%;
-    height: 100vh;
+    padding: 0;
 }
 .text_container{
     margin: 0 auto;
@@ -36,7 +37,7 @@ nav{
     width: 250px;
     height: 100vh;
     z-index: 5;
-    display: none;
+    display: block;
 }
 nav li {
     list-style-type: none;
@@ -101,6 +102,70 @@ footer{
     margin: 0 auto;
 }
 
+/* welcome */
+#bg{
+    width: 100vw;
+    height: 200vh;
+    background: url("/assets/img/sunrise.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    position: fixed;
+    display:block;
+    animation:moving 3s 1;
+    animation-fill-mode:both;
+}
+@keyframes moving{
+    0%{transform:translateY(0px);}
+    100%{transform:translateY(-350px);}
+}
+
+#home{
+    position: absolute;
+    left:20vw;
+    bottom:80vh;
+    width: 60vw;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px gray;
+    cursor: default;
+}
+.welcome_hr{
+    width: 50vw;
+    border-collapse: unset;
+    border: solid 2px white;
+}
+
+/* post */
+.flex_container{
+    display: flex;
+    justify-content:space-around;
+}
+.post_container:hover{
+    background-color: #f2f2f2;
+}
+.post__container{
+    margin: 10%;
+    padding: 10px;
+    min-width: 250px;
+    height: 20vh;
+}
+.post_img>img{
+    width: 120px;
+    height:120px;
+}
+.post_img{
+}
+.post_title{
+    font-size: x-large;
+    color: #404040;
+}
+.post_tag{
+}
+.post_desc{
+}
+
+
 /* common */
 
 i{
@@ -111,10 +176,10 @@ a {
     text-decoration: none;
     color: #666666;
 }
-hr{
+.main_hr{
     width: 60%;
     color: #666666;
-    margin-bottom: 5%;
+    margin: 5% auto;
 }
 
 .flat{
@@ -122,3 +187,6 @@ hr{
     padding: 0;
 }
 
+.upper{
+    text-transform: uppercase;
+}
