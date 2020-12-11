@@ -1,5 +1,5 @@
 ---
-layout: thoughts
+layout: memo
 title: idea
 permalink: /idea/
 ---

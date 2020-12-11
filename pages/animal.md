@@ -1,5 +1,5 @@
 ---
-layout: likes
+layout: album
 title: animal
 permalink: /animal/
 ---

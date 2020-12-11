@@ -1,5 +1,5 @@
 ---
-layout: trips
+layout: album
 title: europe
 permalink: /europe/
 ---

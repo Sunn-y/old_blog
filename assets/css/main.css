@@ -11,8 +11,6 @@ main{
     float: right;
     color: #666666;
     width: 100vh;
-    
-    padding-top: 2%;
 }
 .center_container{
     text-align: center;
@@ -37,7 +35,10 @@ nav{
     width: 250px;
     height: 100vh;
     z-index: 5;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
 }
 nav li {
     list-style-type: none;
@@ -59,16 +60,6 @@ footer{
     top: 0;
     left: 0;
     z-index: 5; 
-}
-.nav_grid{
-    display: grid;
-    padding: 0;
-    height: 100vh;
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas:
-    "none" 
-    "menu" "menu" "menu" "menu" "menu" "menu" "menu" "menu" "menu"
-     "footer" "footer";
 }
 .menu{
     color: #666666;
@@ -98,8 +89,85 @@ footer{
     color:#ff8080;
 } 
 
-.logo{
-    margin: 0 auto;
+#logo{
+    padding: 20px;
+    font-family: harrington;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+    color: #ffaa80;
+    cursor: pointer;
+}
+
+
+/* common */
+
+h1{
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    font-size: xx-small;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+}
+.s_hr{
+    border-collapse: collapse;
+    border: 1.5px solid #ffe6e6;
+    width: 30px;
+    background-color: #ffe6e6;
+}
+.post_hr{
+    background-color: lightgray;
+    border: 0.1px solid lightgray;
+    
+}
+.title_top_hr{
+    background-color: gray;
+    border: 0.5px solid gray;
+    width: 50%;
+    color: #666666;
+    margin: 3% auto;
+}
+.title_bottom_hr{
+    background-color: gray;
+    border: 0.5px solid gray;
+    width: 50%;
+    color: #666666;
+    margin: 3% auto;
+}
+
+.flat{
+    margin: 0;
+    padding: 0;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+
+/* resize */
+@media(max-width:700px){
+    .post_card{
+        flex-direction: column;
+        height: auto;
+    }
+    .post_text_set{
+        width: 90%;
+    }
+    .hf_img{
+        height: 50vw;
+        margin-bottom: 5vw;
+    }
 }
 
 /* welcome */
@@ -135,58 +203,97 @@ footer{
     border-collapse: unset;
     border: solid 2px white;
 }
+.welcome_title{
+    color: white;
+}
 
 /* post */
-.flex_container{
+.inline_flex{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-around;
+    
 }
-.post_container:hover{
+.post_card:hover, .img_card:hover{
     background-color: #f2f2f2;
 }
-.post__container{
-    margin: 10%;
-    padding: 10px;
-    min-width: 250px;
-    height: 20vh;
+.img_card{
+    margin:2%;
+    margin-bottom: 1%;
+    padding: 15px;
+    box-shadow: 0px 0px 2px lightgray;
 }
-.post_img>img{
-    width: 120px;
-    height:120px;
-}
-.post_img{
-}
-.post_title{
-    font-size: x-large;
-    color: #404040;
-}
-.post_tag{
-}
-.post_desc{
+.img_card img{
+    margin-bottom: 2vh;
 }
 
-
-/* common */
-
-i{
-    font-size: xx-small;
+.memo_card{
+    width: 250px;
+    margin:2%;
+    margin-bottom: 1%;
+    padding: 15px;
+    box-shadow: 0px 0px 2px lightgray;
 }
 
-a {
-    text-decoration: none;
-    color: #666666;
+.post_card{
+    margin:2%;
+    margin-bottom: 1%;
+    padding: 15px;
+    width: 80%;
+    height: 120px;
+    box-shadow: 0px 0px 2px lightgray;
+    display: flex;
+    justify-content: space-around;
 }
-.main_hr{
-    width: 60%;
-    color: #666666;
-    margin: 5% auto;
+.frame_s{
+    height: 120px;
+}
+.frame_m{
+    height: 200px;
+}
+.frame_34{
+    width: 270px;
+    height: 360px;
 }
 
-.flat{
-    margin: 0;
-    padding: 0;
+.align_flex{
+    display: flex;
+    align-content: space-around;
+}
+.justify_flex{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
 }
 
-.upper{
-    text-transform: uppercase;
+.wf_img{
+    width: 100%;
+    height: auto;
+}
+.hf_img{
+    width: auto;
+    height: 100%;
+}
+.tag{
+    padding: 3px 5px;
+    background: #ffffe6;
+}
+.post_text_set{
+    width: 80%;
+    padding:0 5%;
+    text-align: left;
+}
+.post_text_set p{
+    color: #cccccc;
+}
+
+/*  memo */
+.drop_memo{
+    position: absolute;
+    text-align: left;
+    display: none;
+    width: 220px;
+    height: 250px;
+    padding: 15px;
+    background-color: #f2f2f2;
 }

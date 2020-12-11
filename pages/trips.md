@@ -1,5 +1,5 @@
 ---
-layout: trips
+layout: category
 title: trips
 permalink: /trips/
 ---

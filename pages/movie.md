@@ -1,5 +1,5 @@
 ---
-layout: reviews
+layout: review
 title: movie
 permalink: /movie/
 ---

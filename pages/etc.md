@@ -1,5 +1,5 @@
 ---
-layout: thoughts
+layout: memo
 title: etc
 permalink: /etc/
 ---

@@ -1,5 +1,5 @@
 ---
-layout: reviews
+layout: review
 title: book
 permalink: /book/
 ---

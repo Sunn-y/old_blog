@@ -1,5 +1,5 @@
 ---
-layout: learnings
+layout: article
 title: psychology
 permalink: /psychology/
 ---

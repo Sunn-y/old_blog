@@ -1,5 +1,5 @@
 ---
-layout: thoughts
+layout: category
 title: thoughts
 permalink: /thoughts/
 ---
