@@ -5,9 +5,10 @@ layout: wrapper
 <hr class="title_top_hr" size="1">
 <h1 class="upper">{{page.title}}</h1>
 <hr class="title_bottom_hr" size="1">
+<div class="inline_flex">
 {% for post in site.posts %}
-<div class="post_card">
-	<img class="hf_img" src="{{ post.image }}">
+<div class="img_card">
+	<img class="frame_34" src="{{ post.image }}">
 	<div class="post_text_set">
 		<h3><a class="post_title" href="{{  post.url  }}">{{ post.title }}</a></h3>
 		<hr class="s_hr" align="left" />
@@ -23,3 +24,4 @@ layout: wrapper
 	</div>
 </div>
 {% endfor %}
+</div>

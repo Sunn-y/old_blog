@@ -1,7 +1,0 @@
----
-title: "trips"
-date: 2020-01-01 12:00:00 +0900
-image: "https://picsum.photos/1920/1080?random"
-category: "korea"
-tags: kyeonggi
----
