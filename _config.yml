@@ -9,9 +9,11 @@ permalink: /:categories/:title
 author: "Sunny"
 plugins:
   - jekyll-feed
+
 sass:
   sass_dir: _sass
-     style: wrapper    
+  style: compressed
+
 defaults:
   - scope:
       path: ""
