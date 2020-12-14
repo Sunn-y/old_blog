@@ -43,6 +43,15 @@ nav{
 main{
     position: absolute;
     top:0;
+    padding: 5em;
+    @media #{$medium}{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    @media #{$small}{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 }
 .full_main{
     width: 100%;

@@ -1,6 +1,39 @@
 <nav class="animated">
-    <br>
-    <br>
-    <br>
-    네비게이션
+    <div>
+        <ul class="menu">
+            {% for main in site.data.pages.menu %}
+        <li><a style="{% if page.url == main.url %}color: #ff8080;{% endif %}"
+                href="{{ main.url }}">
+            {{ main.name }} </a> 
+                {% if main.name == 'LEARNINGS' or 
+                        main.name == 'REVIEWS' or 
+                        main.name == 'TRIPS' or 
+                        main.name == 'LIKES' or 
+                        main.name == 'THOUGHTS'
+                %}
+                &nbsp;&nbsp;<b class="hover">+</b>
+                {% endif %}
+                <ul class="sub_menu">
+                {% for sub in main.categories %}
+                <li  class="{{ sub.name }}">
+                    <a style="{% if page.url == sub.url %}color: #ff8080;{% endif %}" 
+                    href="{{ sub.url }}">- {{ sub.name }}</a><br>
+                </li>
+                {% endfor%}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <a href='/'><div id="logo">Sunny Days</div></a>
+    <div class="center_container">
+        <a href="http://github.com/{{ site.github_username }}" target="_blank">
+        <i class="med_i fab fa-github fa-lg social_btn"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="mailto:{{ site.email }}"> <i class="med_i far fa-envelope fa-lg social_btn"></i>
+        </a>
+    </div>
+    <br><br><br>
+    <footer>
+        Copyright©2020. Sunny.All rights reserved.
+    </footer>
 </nav>
