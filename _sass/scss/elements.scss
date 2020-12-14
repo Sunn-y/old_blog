@@ -1,6 +1,20 @@
 //headings
 h1 {
     text-align: center;
+    @media #{$small} {
+        font-size: x-large;
+    }
+};
+hr{
+    border: 0.5px solid $gray3;
+    background-color: $gray3;
+}
+.hr50{
+    width: 50%;
+}
+.post_hr{
+    border: 0.5px solid $gray2;
+    background-color: $gray2;
 }
 
 //btns
@@ -34,4 +48,59 @@ h1 {
 
 %li_flat{
     list-style-type: none;
+}
+
+//font
+@font-face{
+    font-family: 'noto';
+    src: url(../../assets/fonts/Noto_Serif_KR/NotoSerifKR-ExtraLight.otf);
+};
+.font_2x{
+    font-size: 4rem;
+}
+.text_box{
+    font-size:1.3em;
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+
+//img
+%img_align{
+    display: block;
+    margin: 0 auto;
+}
+.xs_img{
+    @extend %img_align;
+    width: 120px; 
+    height: 90px;
+}
+.sm_img{
+    @extend %img_align;
+    width: 240px; 
+    height: 180px;
+}
+.sm_34_img{
+    @extend %img_align;
+    width: 22.5em; 
+    height: 30em;
+}
+.md_img{
+    @extend %img_align;
+    width: 480px; 
+    height: 360px;
+}
+.lg_img{
+    @extend %img_align;
+    width: 720px; 
+    height: 540px;
+}
+
+//tags
+.tag{
+    padding: 0 5px;
+    background-color: $brown1;
 }
