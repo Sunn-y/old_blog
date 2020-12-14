@@ -17,4 +17,16 @@
     @extend %button;
     border-radius: 16px;
     color: $black3;
+    padding: 0;
+    margin: 0;
+}
+
+//a
+%a_flat{
+    text-decoration: none;
+    color: $black1;
+}
+
+%li_flat{
+    list-style-type: none;
 }
