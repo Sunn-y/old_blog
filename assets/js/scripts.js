@@ -8,9 +8,9 @@ $(document).ready(function() {
     };
     //nav
     if($(window).innerWidth() < 1200){
-        $("nav").addClass("fadeOut"); 
+        $("nav").hide().addClass("is_hide"); 
     }
-    if(!$("nav").hasClass("fadeOut")){
+    if(!$("nav").hasClass("is_hide")){
         $("main").css("left",360).css("width",$(window).innerWidth()-360);
     }
     //responsive object
@@ -26,12 +26,12 @@ $(document).ready(function() {
     });
     //event
     $(".nav_toggle").click(function(){
-        if($("nav").hasClass('fadeOut')) {
-            $("nav").removeClass("fadeOut").addClass("fadeIn");
+        if($("nav").hasClass('is_hide')) {
+            $("nav").removeClass("is_hide").show().addClass("fadeIn");
             $("main").css("width",$(window).innerWidth()-360).css("left",360);
         }
         else{
-            $("nav").removeClass("fadeIn").addClass("fadeOut");
+            $("nav").removeClass("fadeIn").hide().addClass("is_hide");
             $("main").css("width",$(window).innerWidth()).css("left",0);
         }
     });
