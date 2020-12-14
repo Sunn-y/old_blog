@@ -2,7 +2,6 @@
 title: Sunny Days
 description: Better than I was yesterday!
 baseurl: ""
-url: https://sunn-y.github.io/
 
 #Jekyll
 permalink: /:categories/:title

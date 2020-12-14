@@ -1,0 +1,15 @@
+//btns
+%button{
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 3px;
+    &:hover{
+        cursor: pointer;
+        background-color: rgba($black3, 0.2);
+    }
+}
+.btn{
+    @extend %button;
+    color: $brown3;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	{% include head.html %}
+	{% include scripts.html %}
+</head>
+
+<body>
+	<div class="wrapper animated fadeIn">
+		{% include nav.html %}
+		<main class="animated">
+			<div class="container">
+				{{ content }}
+			</div>
+		</main>
+		<i class="fas fa-bars fa-2x btn nav_toggle"></i>
+		<i class="fas fa-arrow-up fa-2x btn goup"></i>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+%flat{
+    margin: 0;
+	padding: 0;
+}
+html{
+    @extend %flat
+}
+body{
+    @extend %flat;
+    font-family: $font1;
+    color: $black1;
+    line-height: 1.6em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+
+//nav
+nav{
+    background-color: $coral1;
+    width: 300px;
+    height: 100vh;
+    position:fixed;
+    top:0;
+    left: 0;
+    padding: 30px;
+}
+.nav_toggle{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.goup{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+}
+
+//main
+main{
+    position: absolute;
+    top:0;
+}
+.full_main{
+    width: 100%;
+}
+
+.fluid_main{
+    width: 56.25em;
+}
