@@ -5,6 +5,7 @@ layout: page
     {% for post in site.posts %}
     {% if page.title == post.categories.first %}
     <div class="post">
+        <a href="{{post.url}}" class="a_flat">
             <h3>{{post.title}}</h3>
             <i class="far fa-smile-wink"></i> {{site.author}}&nbsp;&nbsp;&nbsp;&nbsp;
             <i class="far fa-calendar"></i> {{post.date|date:"%B %d, %Y"}}&nbsp;&nbsp;&nbsp;&nbsp;
@@ -14,6 +15,7 @@ layout: page
             {% endfor %}
             <hr>
             <div>{{ post.content }}</div>
+        </a>
         </div>
         {% endif %}
         {% endfor %}

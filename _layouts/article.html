@@ -1,17 +1,16 @@
 ---
 layout: page
-type: list
 ---
 <div class="post_box center">
     {% for post in site.posts %}
     {% if page.title == post.categories.first %}
     <div class="post">
         <a href="{{post.url}}" class="a_flat">
-        {% if page.title == 'PROGRAMMING' or page.title == 'PSYCHOLOGY' or page.title == 'ENGLISH' %}
-        <img class="sm_img" src="{{post.image}}">
-        {% else if page.title == 'BOOK' or page.title == 'MOVIE' or page.title == 'LECTURE' %}
-        <img class="md_34_img" src="{{post.image}}">
-        {% endif %}
+            {% if page.title == 'PROGRAMMING' or page.title == 'PSYCHOLOGY' or page.title == 'ENGLISH' %}
+            <img class="sm_img" src="{{post.image}}">
+            {% else if page.title == 'BOOK' or page.title == 'MOVIE' or page.title == 'LECTURE' %}
+            <img class="md_34_img" src="{{post.image}}">
+            {% endif %}
             <h3>{{post.title}}</h3>
             <i class="far fa-smile-wink"></i> {{site.author}}&nbsp;&nbsp;&nbsp;&nbsp;
             <i class="far fa-calendar"></i> {{post.date|date:"%B %d, %Y"}}&nbsp;&nbsp;&nbsp;&nbsp;
