@@ -5,7 +5,7 @@
     </div>
         <ul class="main">
             {% for main in site.data.pages.menu %}
-            <li><a href="{{ main.url }}">{{ main.name }} </a> 
+            <li><a href="{{ main.url }}" class="current">{{ main.name }} </a> 
                     <ul class="sub">
                     {% for sub in main.categories %}
                     <li><a href="{{ sub.url }}">- {{ sub.name }}</a></li>
