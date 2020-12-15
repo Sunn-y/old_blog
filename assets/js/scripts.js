@@ -15,13 +15,7 @@ $(document).ready(function() {
     }
     $(".goup").hide();
     calc_width();
-    // //animation
-    // if($(".container").hasClass('fadeOut')) {
-    //     $(".container").removeClass("fadeOut").addClass("fadeIn");
-    // };
-    // if($(".wrapper").hasClass('fadeOut')) {
-    //     $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
-    // };
+
  
     //responsive object
     $(window).resize(function(){
@@ -39,6 +33,7 @@ $(document).ready(function() {
             $(".goup").hide();
         }
     });
+
     //event
     $(".nav_toggle").click(function(){
         if($("nav").hasClass('is_hide')) {
@@ -52,5 +47,11 @@ $(document).ready(function() {
     $('.goup').click(function() {
         $('html, body').animate({scrollTop: 0}, 500);
         return false;
+    });
+    $(".post").mouseenter(function(){
+        $(this).addClass("animated").addClass("pulse");
+    });
+    $(".post").mouseleave(function(){
+        $(this).removeClass("pulse");
     });
 });

@@ -1,5 +1,5 @@
 ---
-layout: directory
-title: Thoughts
+layout: page
+title: THOUGHTS
 permalink: /thoughts/
 ---

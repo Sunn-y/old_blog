@@ -1,5 +1,5 @@
 ---
-layout: directory
-title: Reviews
+layout: page
+title: REVIEWS
 permalink: /reviews/
 ---

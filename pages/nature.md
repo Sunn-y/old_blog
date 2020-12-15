@@ -1,5 +1,5 @@
 ---
 layout: gallery
-title: Nature
+title: NATURE
 permalink: likes/nature/
 ---

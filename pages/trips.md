@@ -1,5 +1,5 @@
 ---
-layout: directory
-title: Trips
+layout: page
+title: TRIPS
 permalink: /trips/
 ---

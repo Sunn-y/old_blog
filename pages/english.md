@@ -1,5 +1,5 @@
 ---
 layout: article
-title: English
+title: ENGLISH
 permalink: /learnings/english
 ---

@@ -1,5 +1,5 @@
 ---
 layout: article
-title: BOOk
+title: BOOK
 permalink: /reviews/book
 ---

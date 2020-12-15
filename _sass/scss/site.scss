@@ -22,3 +22,21 @@ main{
     padding-top:5em;
     padding-bottom:5em;
 }
+
+//page layouts
+.post_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.post{
+    padding: 2em;
+    &:hover{
+        background-color: $gray1;
+        border-radius: 5px;
+        cursor: pointer;
+        h3{
+            text-decoration: underline;
+        }
+    }
+}
