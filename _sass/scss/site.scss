@@ -28,6 +28,31 @@ main{
 }
 
 //page layouts
+.category_box{
+    padding: 2em;
+    margin-bottom: 2em;
+    width: 16em;
+    height: 16em;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: 5px solid $brown1;
+    border-radius: 10px;
+    background-color: rgba($brown1, 0.2);
+    &:hover{
+        background-color: rgba($brown1, 0.5);
+        cursor: pointer;
+    }
+    a{
+        &:hover{
+            color:$brown3;
+            text-decoration: underline;
+        }  
+    }
+}
+
+
 .post_title{
     margin:1em;
 }
@@ -75,9 +100,12 @@ main{
 }
 
 .post{
+    border: 5px solid $brown1;
+    border-radius: 10px;
+    margin-bottom: 2em;
     padding: 2em;
     &:hover{
-        background-color: $gray1;
+        background-color: rgba($brown1, 0.5);
         border-radius: 5px;
         cursor: pointer;
         h3{

@@ -2,44 +2,41 @@
 layout: page
 ---
 
-<!-- <h1 class="center font_2x">
-    <br>
-    No Posts Yet :(
-</h1> -->
-
-{% assign post = '' %}
-{% for post in site.posts %}
-{% if page.slug == post.categories.first %}
-<div class="sub_category">
-    <ul>
-        <li>
-            <a href="{{post.url}}">{{post.title}}</a>&nbsp;&nbsp;&nbsp;&nbsp;{{post.date|date:"%B %d, %Y"}}
-        </li>
-    </ul>
-</div>
-    {% endif %}
+{% assign pages = site.pages %}
+{% for document in site.documents %}
+{% assign pages = pages | push: document %}
 {% endfor %}
 
+{% assign subpages = pages | where: "main", false | sort: "order" %}
+{% assign pages = pages | where: "main", true | sort: "order" %}
+
 <div class="post_box">
-    <div class="post">
-        <h3></h3>
-        <hr>
-        
+{% for item in pages %}
+    {% if item.slug == page.slug%}
+    {% for subitem in subpages %}
+    {% if subitem.category == item.slug %}
+        <div class="category_box">
+            <h1 class="center">
+                <i class="far fa-folder-open" color="chocolate"></i>
+                {{subitem.title}}</h1>
+             <hr>
+            {% for i in site.categories[page.slug]%}
+            {% if subitem.slug == i.categories.last%}
+               <a href="{{ i.url}}">
+                <i class="far fa-sticky-note"></i>
+                {{i.date | date:"%B %d"}},&nbsp;&nbsp;&nbsp;&nbsp;{{i.title}}
+                </a><br>
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
     </div>
-</div>
-
-
-<!-- 
-
-
-{% assign category = site.categories_main | where: "slug", page.slug | first %}
-{% if category %}
-  {% assign posts = site.categories[page.slug] %}
-{% else %}
-  {% assign sub_cat = site.categories_sub | where: "slug", page.slug | first %}
-  {% if sub_cat %}
-    {% assign posts = site.categories.last[page.slug] %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
+<!-- {% if site.categories[page.slug] %}
+    <h1 class="center font_2x">
+        <br>
+        No Posts Yet :(
+    </h1>
 {% endif %} -->
