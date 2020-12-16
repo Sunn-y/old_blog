@@ -1,20 +1,34 @@
 //headings
-h1 {
+.h1_title {
+    color: $brown3;
     text-align: center;
+    text-shadow: 1px 1px 2px $brown1;
     @media #{$small} {
         font-size: x-large;
     }
 };
+h1{
+    @media #{$small} {
+        font-size: x-large;
+    } 
+}
+
+h2 { 
+    padding: 10px;
+    text-align: left; 
+    border-left: $brown2 8px solid; 
+    background-color: $brown1; 
+    border-radius:3px; 
+}
+
+
 hr{
-    border: 0.5px solid $gray3;
-    background-color: $gray3;
+    border: 0.5px solid $brown2;
+    background-color: $brown2;
 }
 .hr50{
     width: 50%;
-}
-.post_hr{
-    border: 0.5px solid $gray2;
-    background-color: $gray2;
+    border: 0.5px solid $brown1;
 }
 
 //btns
@@ -24,7 +38,7 @@ hr{
     margin: 10px;
     &:hover{
         cursor: pointer;
-        background-color: rgba($brown1, 0.2);
+        background-color: rgba($brown2, 0.2);
     }
 }
 .btn{
@@ -35,24 +49,22 @@ hr{
 .social_btn{
     @extend %button;
     border-radius: 16px;
-    color: $brown2;
+    color: $coral2;
     padding: 0;
     margin: 0;
 }
 
 //a
-%a_flat{
+a{
     text-decoration: none;
-    color: $black1;
-}
-.a_flat{
-    text-decoration: none;
-    color: $black1;
 }
 
+//list
 %li_flat{
     list-style-type: none;
 }
+
+
 
 //font
 @font-face{
@@ -76,12 +88,14 @@ hr{
 %img_align{
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
 }
 .xs_img{
     @extend %img_align;
     width: 120px; 
     height: 90px;
 }
+
 .sm_img{
     @extend %img_align;
     width: 240px; 
@@ -124,4 +138,30 @@ hr{
 .tag{
     padding: 0 5px;
     background-color: $brown1;
+    border-radius: 5px;
+    color: $brown3;
+}
+
+//blockquote
+blockquote{
+    background-color: $brown1;
+    color: $brown5;
+    border-radius: 10px;
+    margin: 3em 0;
+    padding: 0.2em 1em;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 3em auto;
+    th, td{
+        padding: 1em 2em;
+    }
+    th{
+        border-bottom:2px solid $brown2;
+        color: $brown3;
+    }
+    td{
+        border-bottom:2px solid $brown1;
+    }
 }

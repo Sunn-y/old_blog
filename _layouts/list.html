@@ -1,8 +1,29 @@
 ---
 layout: default
 ---
-<h1>
-    this is list layout
-</h1>
-<hr>
-{{content}}
+{% for post in site.posts %}
+{% if page.slug == post.categories.last %}
+<div class="post">
+    <a href="{{post.url}}">
+        <div class="post_grid">
+        {% if post.img %}
+            <img class="xs_img" src="{{post.img}}">
+        {% endif %}
+            <div class="center">
+                <h3>{{post.title}}</h3>
+                <span class="inline"><i class="far fa-smile-wink"></i> {{site.author}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="inline"><i class="far fa-calendar"></i> {{post.date|date:"%B %d, %Y"}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="inline">
+                <i class="fas fa-tags"></i> 
+                {% for tag in post.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+                </span>
+                <hr>
+                <div>{{ post.description }}</div>
+            </div>
+        </div>
+    </a>
+</div>
+{% endif %}
+{% endfor %}

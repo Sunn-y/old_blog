@@ -1,35 +1,11 @@
 ---
 layout: default
+comment: false
 ---
-<hr class="hr50"><h1>{{ page.title }}</h1><hr class="hr50"><br><br><br>
-{{ content }}
-{% for main in site.data.pages.menu %}
-{% if main.name == page.title %}
-{% for sub in main.categories %}
-<a href="{{ sub.url }}" class="center a_flat">
-        <hr><br><br><br>
-        <h2>{{ sub.name }}</h2>
-                        <!-- <div class="post_box center"> -->
-                                {% for post in site.posts %}
-                                {% if sub.name == post.categories.first %}
-                                <div class="post">
-                                    <a href="{{post.url}}" class="a_flat">
-                                        <h3>{{post.title}}</h3>
-                                        <i class="far fa-smile-wink"></i> {{site.author}}&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <i class="far fa-calendar"></i> {{post.date|date:"%B %d, %Y"}}&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <i class="fas fa-tags"></i> 
-                                        {% for tag in post.tags %}
-                                        <span class="tag">{{ tag }}</span>
-                                        {% endfor %}
-                                        <hr>
-                                        <div>{{ post.description }}</div>
-                                    </a>
-                                    </div>
-                                    {% endif %}
-                                    {% endfor %}
-                                <!-- </div> -->
-                        </a>
-                        {% endfor%}
-                        {% endif %}
-                        {% endfor %}
+<header>
+    <hr class="hr50"><h1 class="h1_title">{{ page.title }}</h1><hr class="hr50">
+</header>
+<br><br><br>
+{{content}}
+<br><br><br>
 <hr>

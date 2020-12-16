@@ -14,7 +14,9 @@
 
 		{% assign subpages = pages | where: "main", false | sort: "order" %}
 		{% assign pages = pages | where: "main", true | sort: "order" %}
+		
 		{% assign count = 0%}
+		
 		{% for item in pages %}
 		{% assign count = count | plus: 1 %}
 		<li>

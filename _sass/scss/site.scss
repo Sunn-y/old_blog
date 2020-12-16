@@ -13,6 +13,7 @@ body{
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
+    line-height: normal;
 }
 
 //main
@@ -21,14 +22,58 @@ main{
     top:0;
     padding-top:5em;
     padding-bottom:5em;
+    a{
+        color: $black1;
+    }
 }
 
 //page layouts
+.post_title{
+    margin:1em;
+}
+.post_content{
+    padding: 2em;
+    a{
+        color: $brown3;
+        font-weight: bold;
+        &:hover{
+            background-color: $brown1;
+        }
+    }
+    li{
+        list-style-type: square;
+        li{
+            list-style-type: circle;
+        }
+    }
+    img{
+        @extend %img_align;
+        width: 720px; 
+        height: 540px;
+        @media #{$small}{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
 .post_box{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.post_grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    @media #{$small}{
+        display: inline-block; 
+        grid-template-columns: none;
+    }
+    @media #{$medium}{
+        display: inline-block;
+        grid-template-columns: none;
+    }
+}
+
 .post{
     padding: 2em;
     &:hover{
@@ -38,5 +83,15 @@ main{
         h3{
             text-decoration: underline;
         }
+    }
+    .inline{
+        @media #{$small}{
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    .block{
+        display: block;
+        margin-bottom: 10px;
     }
 }

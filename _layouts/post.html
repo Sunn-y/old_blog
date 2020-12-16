@@ -1,20 +1,22 @@
 ---
 layout: default
+comment: true
 ---
-<h1 class="font_2x">{{page.title}}</h1><br>
-<div class="center">
-    <i class="far fa-smile-wink"></i> {{site.author}}&nbsp;&nbsp;&nbsp;&nbsp;
+
+<i class="fas fa-tags" color="chocolate"></i> 
+{% for tag in page.tags %}
+    <span class="tag">{{ tag }}</span>
+{% endfor %}
+<h1 class="font_2x h1_title">{{page.title}}</h1>
+
+<div class="center post_title">
+    <i class="fas fa-user-edit"></i> {{page.author}}&nbsp;&nbsp;&nbsp;&nbsp;
     <i class="far fa-calendar"></i> {{page.date|date:"%B %d, %Y"}}&nbsp;&nbsp;&nbsp;&nbsp;
-    <!-- {% for category in page.categories %}
-        {{ category }}<br>
-        {% endfor %} -->
-        <!-- <i class="far fa-file"></i> {{ page.categories | first}}
-        <i class="far fa-folder"></i> {{ page.categories | last}} -->
-        <i class="fas fa-tags"></i> 
-        {% for tag in page.tags %}
-        <span class="tag">{{ tag }}</span>
-        {% endfor %}
 </div>
-<hr><br><br>
-{{content}} 
-<br><br><hr>
+<hr>
+<div class="post_content">
+    {{content}} 
+</div>
+
+<br><br><br>
+<hr>

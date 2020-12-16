@@ -18,6 +18,7 @@ defaults:
       path: ""
     values:
       layout: "post"
+      author: "Sunny"
 
 #Social
 email: in.wise.nature@gmail.com

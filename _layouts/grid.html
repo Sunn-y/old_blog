@@ -1,8 +1,28 @@
 ---
 layout: default
 ---
-<h1>
-    this is grid layout
-</h1>
-<hr>
-{{content}}
+
+<div class="post_box center">
+    {% for post in site.posts %}
+    {% if page.slug == post.categories.last %}
+    <div class="post">
+        <a href="{{post.url}}">
+            {% if post.img %}
+              <img class="lg_img" src="{{post.img}}">
+            {% endif %}
+            <h3>{{post.title}}</h3>
+            <span class="{% if post.img %}inline{%else%}block{%endif%}"><i class="far fa-smile-wink"></i> {{site.author}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="{% if post.img %}inline{%else%}block{%endif%}"><i class="far fa-calendar"></i> {{post.date|date:"%B %d, %Y"}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="{% if post.img %}inline{%else%}block{%endif%}">
+            <i class="fas fa-tags"></i> 
+            {% for tag in post.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+            </span>
+            <hr>
+            <div>{{ post.description }}</div>
+        </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

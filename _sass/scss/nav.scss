@@ -1,5 +1,4 @@
 nav{
-    background-color: $coral1;
     width: 360px;
     height: 100vh;
     position:fixed;
@@ -7,7 +6,10 @@ nav{
     left: 0;
     padding: 0;
     z-index: 1;
-    background: url('/assets/img/nav_bg.png');
+    background-color: $brown1;
+    background-image: url('/assets/img/nav_bg.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
     li{
         @extend %li_flat;
     };
@@ -19,7 +21,6 @@ nav{
         padding: 30px;
         color: $brown1;
         a{
-            @extend %a_flat;
             color: $brown1;
             &:hover{
                 text-decoration: underline;
@@ -42,6 +43,10 @@ nav{
         display: flex;
         justify-content: space-between;
         margin: 0.5em 0;
+    }
+    @media #{$small}{
+        width: 90%;
+        height: 100%;
     }
 }
 
@@ -86,7 +91,6 @@ input[type=checkbox] + label {
     width: 360px;
     text-shadow: 1px 1px 1px $brown2;
     a{
-        @extend %a_flat;
         color: $brown2;
         font-size: 2.5em;
     };
@@ -103,6 +107,7 @@ footer{
     }
 }
 .goup{
+    @extend %button;
     position: fixed;
     bottom: 0;
     right: 0;
