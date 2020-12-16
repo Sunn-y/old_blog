@@ -10,22 +10,33 @@ function calc_width(){
 
 $(document).ready(function() {
 
+    if ($(".container").hasClass('fadeOut')) {
+        $(".container").removeClass("fadeOut").addClass("fadeIn");
+    }
+    if ($(".wrapper").hasClass('fadeOut')) {
+        $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
+    }
+    $(".zoombtn").click(function() {
+        $(".container").removeClass("fadeIn").addClass("fadeOut");
+        $(".wrapper").removeClass("fadeIn").addClass("fadeOut");
+    });
+
     //set
     if($(window).innerWidth() < 1200){
         $("nav").hide().addClass("is_hide"); 
     }
     $(".goup").hide();
     calc_width();
+
+    // nav set
     $('.sub').hide();
     var now = $(location).attr('pathname');
-    
     $('.sub').children('li').children('a').each(function(index, item){
        if(now==$(this).attr('href')){
             $(this).parent().parent().show();
             return false;
        }
     });
-    // console.log(now);
 
     // navagation sub menu toggle
     $('input[type=checkbox').change(function(){

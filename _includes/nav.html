@@ -5,6 +5,8 @@
 	</div>
 
 	<ul class="main">
+		<li><a href="/" {% if page.url == '/'%}class="current"{% endif%}>Home</a></li>
+		<li><a href="{{site.url}}/about" {% if page.url == '/about/'%}class="current"{% endif%}>About</a></li>
 		{% assign pages = site.pages %}
 		{% for document in site.documents %}
 		{% assign pages = pages | push: document %}
@@ -17,7 +19,7 @@
 		{% assign count = count | plus: 1 %}
 		<li>
 			<div class="main_list">
-				<a {% if page.url == item.url %}class="current"{% endif %} href="{{ item.url | relative_url }}">{{ item.title }}</a>
+				<a {% if page.url == item.url %}class="current"{% endif %} href="{{ item.url }}">{{ item.title }}</a>
 				{% if item.sub %}
 				<input type="checkbox" id="list-item-{{ count }}" />
 				<label for="list-item-{{ count }}">▼</label>
@@ -37,7 +39,7 @@
 		{% endfor %}
 	</ul>
 
-	<div class="logo animated bounce"><a href='/'>Sunny Days <i class="fab fa-pagelines fa-lg" color="yellowgreen"></i></a></div>
+	<div class="logo animated bounce" data-wow-delay="3s"><a href='/'>Sunny Days <i class="fab fa-pagelines fa-lg" color="yellowgreen"></i></a></div>
 	<footer>
 		<a href="http://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github fa-lg social_btn fa-spin"></i></a>
 		Copyright © 2020. Sunny. All rights reserved.
