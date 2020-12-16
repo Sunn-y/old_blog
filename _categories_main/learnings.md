@@ -1,6 +1,6 @@
 ---
 layout: categories
-title: Learngings
+title: Learnings
 slug: learnings
 main: true
 sub: true
