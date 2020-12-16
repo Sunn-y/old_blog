@@ -27,13 +27,14 @@ $(document).ready(function() {
     }
     $(".goup").hide();
     calc_width();
-
+    
     // nav set
     $('.sub').hide();
     var now = $(location).attr('pathname');
     $('.sub').children('li').children('a').each(function(index, item){
-       if(now==$(this).attr('href')){
+       if(now.indexOf($(this).attr('href')) >= 0){
             $(this).parent().parent().show();
+            $(this).css('text-decoration','underline');
             return false;
        }
     });
