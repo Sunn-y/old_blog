@@ -22,3 +22,12 @@ defaults:
 #Social
 email: in.wise.nature@gmail.com
 github_username: Sunn-y
+
+#collections
+collections:
+  categories_main:
+    permalink: /:name/
+    output: true
+  categories_sub:
+    permalink: /:categories/:name/
+    output: true

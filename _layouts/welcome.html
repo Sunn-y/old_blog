@@ -2,4 +2,37 @@
 layout: page
 ---
 
-<img class="lg_img" src="https://cdn.pixabay.com/photo/2016/12/10/17/48/chinchilla-1897800_1280.jpg">
+<!-- <img class="lg_img" src="https://cdn.pixabay.com/photo/2016/12/10/17/48/chinchilla-1897800_1280.jpg"> -->
+
+<i class="fas fa-angle-up fa-2x"></i>
+<ul>
+    {% assign pages = site.pages %}
+  
+    {% for document in site.documents %}
+      {% assign pages = pages | push: document %}
+    {% endfor %}
+  
+    {% assign subpages = pages | where: "main", false | sort: "order" %}
+    {% assign pages = pages | where: "main", true | sort: "order" %}
+    {% assign count = 0%}
+    {% for node in pages %}
+    {% assign count = count | plus: 1 %}
+      <li>
+        <input type="checkbox" id="list-item-{{ count }}"/>
+        <div  class="list-wrapper">
+        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+         {% if node.sub %}<label class="folder" for="list-item-{{ count }}">▾</label>{% endif %}
+      </div>
+       <ul class="list-body">
+         {% for subnode in subpages %}
+             {% if subnode.category == node.slug %}
+               <li>
+                 <a class="sidebar-nav-subitem{% if page.url == subnode.url %} active{% endif %}" href="{{ subnode.url | relative_url }}">{{ subnode.title }}</a>
+               </li>
+             {% endif %}
+           {% endfor %}
+       </ul>
+      </li>
+  
+    {% endfor %}
+  </ul>

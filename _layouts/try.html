@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[type=checkbox] { 
+        display:none; 
+    }
+    input[type=checkbox] + label span { 
+        display: inline-block; 
+        cursor: pointer; 
+        line-height: 22px; 
+        padding-left: 22px; 
+        background: url('D:/workspace/jekyll/sunny_day/assets/img/nav_down.png') left/22px no-repeat; 
+    }
+    input[type=checkbox]:checked + label { 
+        background-image: url('D:/workspace/jekyll/sunny_day/assets/img/nav_up.png'); 
+    }
+
+</style>
+<body>
+    <input type="checkbox" id="box1"><label for="box1">　</label>
+    <input type="checkbox" id="box2"><label for="box2">동의합니다.</label>
+    <input type="checkbox" id="box3"><label for="box3">동의합니다.</label>
+</body>
+</html>

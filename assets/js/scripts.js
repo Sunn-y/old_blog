@@ -9,13 +9,35 @@ function calc_width(){
 
 
 $(document).ready(function() {
+
     //set
     if($(window).innerWidth() < 1200){
         $("nav").hide().addClass("is_hide"); 
     }
     $(".goup").hide();
     calc_width();
+    $('.sub').hide();
+    var now = $(location).attr('pathname');
+    
+    $('.sub').children('li').children('a').each(function(index, item){
+       if(now==$(this).attr('href')){
+            $(this).parent().parent().show();
+            return false;
+       }
+    });
+    // console.log(now);
 
+    // navagation sub menu toggle
+    $('input[type=checkbox').change(function(){
+        if($(this).is(':checked')){
+            $(this).next().text('▲');
+            $(this).parent().next().show();
+        }
+        else{
+            $(this).next().text('▼');
+            $('.sub').hide();
+        }
+    });
  
     //responsive object
     $(window).resize(function(){
