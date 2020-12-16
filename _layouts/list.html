@@ -27,3 +27,11 @@ layout: default
 </div>
 {% endif %}
 {% endfor %}
+
+{% if site.categories[page.slug]%}
+{% else %}
+<h1 class="center font_2x">
+    <br><br>
+    No Posts Yet :(
+</h1>
+{% endif %}

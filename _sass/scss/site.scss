@@ -3,7 +3,8 @@
 	padding: 0;
 }
 html{
-    @extend %flat
+    @extend %flat;
+    height: 100%;
 }
 body{
     @extend %flat;
@@ -14,6 +15,38 @@ body{
     overflow-y: auto;
     position: relative;
     line-height: normal;
+    height: 100%;
+}
+
+//welcome
+.welcome_box{
+    margin: 0;
+    height: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    font-family: $font2;
+    font-size:xx-large;
+    color: $brown5;
+    div{
+        color: $brown3;
+        font-size:large; 
+    }
+    .s1{
+        text-shadow: 2px 2px 5px $coral2;
+    }
+    .s2{
+        text-shadow: 2px 2px 5px $brown1;
+    }
+    .s3{
+        text-shadow: 2px 2px 5px $brown2;
+    }
+    @media #{$small} {
+        font-size: large;
+    } 
+    @media #{$medium} {
+        font-size: x-large;
+    } 
+   
 }
 
 //main
