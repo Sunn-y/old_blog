@@ -94,12 +94,18 @@ body{
 
 //main
 main{
-    position: absolute;
-    top:0;
-    padding-top:5em;
-    padding-bottom:5em;
+    margin: 0;
+    padding: 0;
+    @media #{$x_large}{
+        margin-left: 25%;
+    }
     a{
         color: $black1;
+    }
+    .container{
+        padding: 3em;
+        margin: 0;
+        
     }
 }
 

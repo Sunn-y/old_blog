@@ -1,15 +1,24 @@
 nav{
-    width: 360px;
-    height: 100vh;
-    position:fixed;
-    top:0;
-    left: 0;
-    padding: 0;
-    z-index: 1;
+    width: 25%; 
+    margin: 0; 
+    padding:0; 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    bottom:0; 
+    height: 100%; 
+    cursor:default; 
+    overflow-y:auto; 
+    z-index: 1; 
     background-color: $brown1;
     background-image: url('/assets/img/nav_bg.png');
     background-repeat: no-repeat;
     object-fit: cover;
+    display: none;
+    @media #{$x_large}{
+        display: block;
+        font-size: .85rem;
+    }
     li{
         @extend %li_flat;
     };
@@ -44,9 +53,32 @@ nav{
         justify-content: space-between;
         margin: 0.5em 0;
     }
-    @media #{$small}{
-        width: 90%;
-        height: 100%;
+    .logo{
+        text-align: center;
+        position: fixed;
+        bottom: 70px;
+        left: 0;
+        width: 25%;
+        text-shadow: 1px 1px 1px $brown2;
+        a{
+            color: $brown2;
+            font-size: 2.5em;
+        };
+        @media #{$small}{
+            bottom: 10px;
+            font-size: 0.8em;
+        }
+    }
+    footer{
+        text-align: center;
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+        width: 25%;
+        color: $brown1;
+        @media #{$small}{
+            visibility: hidden;
+        }
     }
 }
 
@@ -69,7 +101,7 @@ input[type=checkbox] + label {
     position: fixed;
     bottom: 180px;
     left: 0;
-    width: 360px;
+    width: 25%;
 
     form{
         margin: 0;
@@ -95,36 +127,20 @@ input[type=checkbox] + label {
     .search_btn{
         color: $brown2;
     }
+    @media #{$small}{
+        bottom: 70px;
+    }
 }
 .nav_toggle{
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
-}
-.logo{
-    text-align: center;
-    position: fixed;
-    bottom: 70px;
-    left: 0;
-    width: 360px;
-    text-shadow: 1px 1px 1px $brown2;
-    a{
-        color: $brown2;
-        font-size: 2.5em;
-    };
-}
-footer{
-    text-align: center;
-    position: fixed;
-    bottom: 5px;
-    left: 0;
-    width: 360px;
-    color: $brown1;
-    a{
-        color:white;
+    @media #{$x_large}{
+        visibility: hidden;
     }
 }
+
 .goup{
     @extend %button;
     position: fixed;
