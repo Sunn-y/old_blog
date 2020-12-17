@@ -71,11 +71,14 @@ a{
     font-family: 'noto';
     src: url(../../assets/fonts/Noto_Serif_KR/NotoSerifKR-ExtraLight.otf);
 };
+.font_sm{
+    font-size: 0.9rem;
+};
+.font_lg{
+    font-size: 1.2rem;
+};
 .font_2x{
     font-size: 4rem;
-}
-.text_box{
-    font-size:1.3em;
 }
 .center{
     text-align: center;
@@ -89,6 +92,13 @@ a{
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+.circle{
+    @extend %img_align;
+    border-radius: 10em;
+    width: 15em; 
+    height: 15em;
 }
 .xs_img{
     @extend %img_align;

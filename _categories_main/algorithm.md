@@ -1,5 +1,5 @@
 ---
-layout: categories
+layout: list
 title: Algorithm
 slug: algorithm
 main: true
