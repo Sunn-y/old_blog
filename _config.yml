@@ -8,17 +8,17 @@ permalink: /:categories/:title
 author: "Sunny"
 plugins:
   - jekyll-feed
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
 defaults:
   - scope:
       path: ""
     values:
       layout: "post"
       author: "Sunny"
+
+#css
+sass:
+  sass_dir: _sass
+  style: compressed
 
 #Social
 email: in.wise.nature@gmail.com
@@ -32,3 +32,12 @@ collections:
   categories_sub:
     permalink: /:categories/:name/
     output: true
+
+tipue_search:
+  include:
+    pages: false
+    collections: []
+  exclude:
+    files: [index.html, search.html]
+    categories: []
+    tags: []

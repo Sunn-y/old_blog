@@ -1,9 +1,5 @@
 <nav class="animated">
-	<div class="search">
-		<input type="text" class="search_input">
-		<i class="fas fa-search fa-2x btn"></i>
-	</div>
-
+	<br><br>
 	<ul class="main">
 		<li><a href="/" {% if page.url == '/'%}class="current"{% endif%}>Home</a></li>
 		<li><a href="{{site.url}}/about" {% if page.url == '/about/'%}class="current"{% endif%}>About</a></li>
@@ -40,7 +36,12 @@
 
 		{% endfor %}
 	</ul>
-
+	<div class="search"> 
+		<i class="fas fa-search fa-2x fa-flip-horizontal search_btn"></i>
+		<form action="/search">
+			<input type="text" name="q" id="tipue_search_input" class="search_input" pattern=".{1,}" title="At least 1 characters" required>
+		</form>
+	</div>
 	<div class="logo animated bounce" data-wow-delay="3s"><a href='/'>Sunny Days <i class="fab fa-pagelines fa-lg" color="yellowgreen"></i></a></div>
 	<footer>
 		<a href="http://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github fa-lg social_btn fa-spin"></i></a>
