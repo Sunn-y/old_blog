@@ -27,6 +27,7 @@ body{
     font-family: $font2;
     font-size:xx-large;
     color: $brown5;
+
     div{
         color: $brown3;
         font-size:large; 
@@ -46,7 +47,6 @@ body{
     @media #{$medium} {
         font-size: x-large;
     } 
-   
 }
 
 //main
