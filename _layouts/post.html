@@ -18,5 +18,8 @@ comment: true
     {{content}} 
 </div>
 
-<br><br><br>
 <hr>
+<br><br><br>
+{% if page.comment %}
+{% include comments.html %}
+{% endif %}

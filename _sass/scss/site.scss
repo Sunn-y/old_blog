@@ -139,6 +139,9 @@ main{
 }
 .post_content{
     padding: 2em;
+    font-size: 1.3em;
+    color: $black3;
+    font-family: $font2;
     a{
         color: $brown3;
         font-weight: bold;
@@ -161,7 +164,67 @@ main{
             height: auto;
         }
     }
+    h1{
+        font-family: $font1;
+        color: $black1;
+    }
+    h2 { 
+        text-align: left; 
+        text-indent: 1em;
+        background-color: white; 
+        border-radius:3px; 
+        border-left: $brown4 10px solid; 
+    }
+    hr{
+        border: 0.5px solid $brown1;
+        background-color: $brown1;
+    }
+    blockquote{
+        padding: 0.2em;
+        text-indent: 1em;
+        text-align: left; 
+        border-radius:3px; 
+        border-left: $brown2 8px solid; 
+        background-color: rgba($yellow1,0.3);
+        color: $brown5;
+        margin: 3em 0;
+    }
+    pre{
+        font-family: $font2;
+        padding: 2em;
+        line-height: 2em;
+        font-size: large;
+        background-color: $gray1;
+        color: $brown4;
+        border-radius: 1em;
+        letter-spacing: 0.1em;
+        word-spacing:0.2em;
+    }
+
+    em{
+        color: $brown5;
+        background-color: $brown1;
+        font-weight: bold;
+        padding: 0.2em 0.5em;
+        border-radius: 5px;
+    }
+
+    table{
+        border-collapse: collapse;
+        margin: 3em auto;
+        th, td{
+            padding: 1em 2em;
+        }
+        th{
+            border-bottom:2px solid $brown2;
+            color: $brown3;
+        }
+        td{
+            border-bottom:2px solid $brown1;
+        }
+    }
 }
+
 .post_box{
     display: flex;
     flex-wrap: wrap;
