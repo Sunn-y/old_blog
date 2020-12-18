@@ -13,6 +13,9 @@
 		<main>
 			<div class="container animated fadeIn">
 				{{ content }}
+				{% if page.comment %}
+				{% include comments.html %}
+				{% endif %}
 			</div>
 		</main>
 		<i class="fas fa-bars fa-2x btn nav_toggle"></i>

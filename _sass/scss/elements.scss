@@ -4,7 +4,7 @@
     text-align: center;
     text-shadow: 1px 1px 2px $brown1;
     @media #{$small} {
-        font-size: x-large;
+        font-size: xx-large;
     }
 };
 h1{
@@ -36,9 +36,10 @@ hr{
     display: inline-block;
     padding: 5px;
     margin: 10px;
+    background-color: rgba($brown2, 0.5);
     &:hover{
         cursor: pointer;
-        background-color: rgba($brown2, 0.2);
+        background-color: rgba($brown3, 0.2);
     }
 }
 .btn{

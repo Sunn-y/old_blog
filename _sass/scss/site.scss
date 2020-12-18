@@ -104,7 +104,10 @@ main{
     .container{
         padding: 3em;
         margin: 0;
-        
+        @media #{$small}{
+            padding: 10px;
+            padding-top: 5em;
+        }
     }
 }
 
@@ -133,15 +136,27 @@ main{
     }
 }
 
-
+//post page
 .post_title{
-    margin:1em;
-}
+    color: $brown3;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 1px 1px 2px $brown1;
+    @media #{$small} {
+        font-size: xx-large;
+    }
+};
+.post_desc{
+    margin: 1em;
+};
+
 .post_content{
     padding: 2em;
-    font-size: 1.3em;
     color: $black3;
     font-family: $font2;
+    @media #{$small}{
+        padding: 0px;
+    };
     a{
         color: $brown3;
         font-weight: bold;
@@ -164,17 +179,27 @@ main{
             height: auto;
         }
     }
+    .post_title{
+       font-size: 1.3rem;
+    }
     h1{
         font-family: $font1;
         color: $black1;
+        @media #{$small}{
+            font-size: x-large;
+        }
     }
     h2 { 
         text-align: left; 
         text-indent: 1em;
         background-color: white; 
         border-radius:3px; 
-        border-left: $brown4 10px solid; 
+        border-left: $brown4 10px solid;
+        @media #{$small}{
+            font-size: large;
+        }
     }
+ 
     hr{
         border: 0.5px solid $brown1;
         background-color: $brown1;
@@ -191,22 +216,24 @@ main{
     }
     pre{
         font-family: $font2;
-        padding: 2em;
-        line-height: 2em;
-        font-size: large;
-        background-color: $gray1;
-        color: $brown4;
-        border-radius: 1em;
-        letter-spacing: 0.1em;
-        word-spacing:0.2em;
+        padding: 2rem;
+        line-height: 1.6rem;
+        background-color: $black3;
+        color: white;
+        border-radius: 0.5rem;
+        letter-spacing: 0.1rem;
+        word-spacing:0.2rem;
+        overflow-y: hidden;
     }
 
     em{
-        color: $brown5;
-        background-color: $brown1;
-        font-weight: bold;
-        padding: 0.2em 0.5em;
+        color: $brown1;
+        background-color: $brown3;
+        padding: 0.2em 0.8em;
         border-radius: 5px;
+    }
+    b{
+        color: $brown3;
     }
 
     table{
