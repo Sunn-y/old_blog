@@ -1,5 +1,5 @@
 ---
-title: "Do It - Vue.js (3)"
+title: "Do It - Vue.js (3) - instance & components"
 categories: [front-end, vuejs]
 tags: [doit]
 comment: true

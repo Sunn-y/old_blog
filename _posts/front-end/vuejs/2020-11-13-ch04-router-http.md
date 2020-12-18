@@ -1,5 +1,5 @@
 ---
-title: "Do It - Vue.js (4)"
+title: "Do It - Vue.js (4) - router & http"
 categories: [front-end, vuejs]
 tags: [doit]
 comment: true

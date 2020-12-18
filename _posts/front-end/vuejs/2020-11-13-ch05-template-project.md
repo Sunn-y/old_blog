@@ -1,5 +1,5 @@
 ---
-title: "Do It - Vue.js (5)"
+title: "Do It - Vue.js (5) - template & project"
 categories: [front-end, vuejs]
 tags: [doit]
 comment: true
@@ -12,8 +12,8 @@ comment: true
 	<li>render() 함수로도 구현가능</li>
 	<li>템플릿에서 사용하는 뷰의 속성과 문법</li>
 	<ul>
-		<li>데이터 바인딩: {{ }}, v-once, v-bind, v-model</li>
-		<li>자바스크립트 표현식: {{ }} 안에 간단한 메소드나 삼항연산자 사용 가능</li>
+		<li>데이터 바인딩: { { } }, v-once, v-bind, v-model</li>
+		<li>자바스크립트 표현식: { { } } 안에 간단한 메소드나 삼항연산자 사용 가능</li>
 		<li>뷰 디렉티브: v-접두사를 가진 모든 속성(v-if, v-for, v-show, v-bind, v-on, v-model)</li>
 		<li>이벤트 처리: function(event) 받아올 수 있음</li>
 		<li>고급 템플릿 기법</li>

@@ -1,5 +1,5 @@
 ---
-title: "Do It - Vue.js (7)"
+title: "Do It - Vue.js (7) - advanced developer"
 categories: [front-end, vuejs]
 tags: [doit]
 comment: true
