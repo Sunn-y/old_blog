@@ -24,10 +24,8 @@ nav{
     };
     .main{
         font-size: x-large;
-        text-indent: 1em;
         margin: 0;
-        margin-top: 10px;
-        padding: 30px;
+        padding: 1em 2em;
         color: $brown1;
         a{
             color: $brown1;
@@ -98,13 +96,12 @@ input[type=checkbox] + label {
 
 
 .search{
-    margin: 0 auto;
-    text-align: center;
     position: fixed;
-    bottom: 180px;
-    left: 0;
-    width: 25%;
-
+    top: 0;
+    left: 210px;
+    padding: 5px;
+    margin: 10px;
+    height: 2em;
     form{
         margin: 0;
         padding: 0;
@@ -116,14 +113,17 @@ input[type=checkbox] + label {
         display: inline;
         font-size: large;
         border: none;
-        background: transparent;
         border-bottom: solid 2px $brown2;
         padding: 0;
         margin: 0;
-        margin-right: 20px;
-        width: 200px;
+        width: 100px;
+        background: transparent;
         &:focus {
             outline:none;
+        }
+        &::placeholder{
+            text-align: center;
+            color: rgba($brown1,0.3);
         }
     }
     .search_btn{
