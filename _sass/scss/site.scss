@@ -21,11 +21,12 @@ body{
 .welcome_box{
     margin: 0;
     height: 100%;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding: 2em;
     font-family: $font2;
-    font-size:xx-large;
+    font-size: xx-large;
     color: $brown5;
+    background-color: rgba($yellow1, 0.4);
+    border-radius: 1000px;
 
     div{
         color: $brown3;
@@ -256,6 +257,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-around;
 }
 .post_grid{
     display: grid;
