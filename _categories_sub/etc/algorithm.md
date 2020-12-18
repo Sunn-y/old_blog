@@ -2,7 +2,7 @@
 layout: list
 title: Algorithm
 slug: algorithm
-main: true
-sub: false
-order: 0
+category: etc
+main: false
+order: 1
 ---

@@ -66,4 +66,4 @@ cy.get('#signin-button').click()
 cy.location('pathname').should('eq','/main')
 </pre>
 <br>
-> Reference : [docs.cypress.io](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell)
+ 출처 : [docs.cypress.io](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell)
