@@ -1,20 +1,20 @@
 ---
 title: "Flutter and React Native"
 categories: [etc, mobile]
-tags: [flutter, react native]
+tags: [cross platform]
 comment: true
 ---
 
-# # Flutter React Native 비교
+# # Cross platform : Flutter React Native 비교
 
 <hr>
 
-|         Flutter         |     React Native     |
-| :---------------------: | :------------------: |
-|         google          |       facebook       |
-|       의존성 적음       |     의존성 높음      |
-|       자바, 장고        | 자바스크립트, 리액트 |
-| 애니메이션, 100% 컨트롤 |  알림, 텍스트, ajax  |
+|         Flutter         |    React Native    |
+| :---------------------: | :----------------: |
+|         google          |      facebook      |
+|     Dart(평판 bad)      |     JavaScript     |
+|      Java, Django       | JavaScript, React  |
+| 애니메이션, 100% 컨트롤 | 알림, 텍스트, ajax |
 
 <br>
 <hr>
