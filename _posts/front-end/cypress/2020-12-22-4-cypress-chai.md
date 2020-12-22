@@ -11,9 +11,7 @@ comment: true
 
 # # chai assertion library
 
-[https://www.chaijs.com/api/bdd/](https://www.chaijs.com/api/bdd/)
-
-## # BDD styles : expect, should.
+## # BDD styles : expect, should. [(API 바로가기)](https://www.chaijs.com/api/bdd/)
 
 - expect : expect(element)
 
@@ -45,11 +43,7 @@ comment: true
 - .ordered
 - .any
 
-<br>
-
-## # TDD styles : assert
-
-[https://www.chaijs.com/api/assert/](https://www.chaijs.com/api/assert/)
+## # TDD styles : assert [(API 바로가기)](https://www.chaijs.com/api/assert/)
 
 ---
 
@@ -58,8 +52,6 @@ comment: true
 - eq
 - be.visible
 - include
-
-<br>
 
 ---
 

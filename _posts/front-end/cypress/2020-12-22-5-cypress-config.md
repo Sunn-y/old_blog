@@ -11,18 +11,16 @@ comment: true
 
 ### GUI 열면 setting/configuration 가면 예시 나옴
 
-<pre>
+```
 {
-    "baseUrl" : ""
+    "baseUrl" : "_url_"
 }
-</pre>
+```
+
+```
+Cypress.config('pageLoadTimeout', 100000)
+```
 
 ---
-
-<pre>
-Cypress.config('pageLoadTimeout', 100000)
-</pre>
-
-## <br>
 
 출처 : [https://www.youtube.com/watch?v=OJSSju-8UJw&list=PLzDWIPKHyNmK9NX9_ng2IdrkEr8L4WwB0&index=7](https://www.youtube.com/watch?v=OJSSju-8UJw&list=PLzDWIPKHyNmK9NX9_ng2IdrkEr8L4WwB0&index=7)

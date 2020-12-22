@@ -11,7 +11,7 @@ comment: true
 | ----------------------- | ------------------------------------- | ------------------- |
 | 페이지 로드 시 실행     | $(document).ready(function(){ ... }); |                     |
 | html 내용 가져오기      | $('p').html()                         | p태그 html 내용     |
-| html 내용 추가          | $('p').html('<h1>hello world</h1>')   |                     |
+| html 내용 추가          | $('p').html('# hello world')          |                     |
 | 텍스트 가져오기         | $('p').text()                         | p태그의 text 가져옴 |
 | 텍스트 추가             | $('p').text('hello world')            | p태그안에 글씨 추가 |
 | CSS 설정                | $('div').css('color', 'red')          |                     |
@@ -28,9 +28,9 @@ comment: true
 | display none 해제       | $('div').show()                       |
 | show + hide 기능을 둘다 | $('div').toggle()                     |
 
-<br>
 # # 이벤트 함수
-<hr>
+
+---
 
 1. click() / dblclicㅏ()
 2. hover()
@@ -43,26 +43,29 @@ comment: true
 9. focus() / blur()
 10. focusIn() / focusOut()
 
-<br>
 # # 애니메이션 효과
-<hr>
+
+---
+
 1. slideUp() / slideDown() / slideToggle()
 2. fadeIn() / fadeOut()
 3. animate() / stop()
 4. rotate()
 
-<br>
 # # 객체 찾기
-<hr>
+
+---
+
 1. next()
 2. nextAll()
 3. parent() / parents()
 4. children()
 5. siblings()
 
-<br>
 # # 기타
-<hr>
+
+---
+
 1. , 없애기 : '안녕,하세요'.replaceAll(',', '')
 2. 배열 순회 : $('input[type=checkbox]).each(function({}))
 3. 윈도우 사이즈 구하기 : $(window).innerWidth() / $(window).innerHeight()

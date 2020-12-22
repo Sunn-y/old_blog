@@ -166,12 +166,25 @@ main{
         &:hover{
             background-color: $brown1;
         }
+    
+    }
+    ol{
+        li{
+            line-height: 2em;
+            li{
+                line-height: 2em;
+            }
+        }
     }
     ul{
         li{
             list-style-type: disc;
+            line-height: 2em;
             li{
-                list-style-type: square;
+                list-style-type: circle;
+                li{
+                    list-style-type: square;
+                }
             }
         }
     }
@@ -228,10 +241,15 @@ main{
         font-family: $font2;
         padding: 2rem;
         line-height: 1.6rem;
-        background-color: $black3;
-        color: white;
+        background-color: rgba($brown1, 0.3);
+        color: $brown5;
         border-radius: 0.5rem;
         overflow-y: hidden;
+    }
+    code{
+        font-family: $font2;
+        color: $brown5;
+        line-height: 1.6rem;
     }
 
     em{
@@ -240,7 +258,7 @@ main{
         padding: 0.2em 0.8em;
         border-radius: 5px;
     }
-    b{
+    b, strong{
         color: $brown3;
     }
 

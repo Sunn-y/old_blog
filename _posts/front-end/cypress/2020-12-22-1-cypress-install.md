@@ -7,77 +7,66 @@ comment: true
 
 # # Set up / Installation
 
-<pre>
-$ npm install -D cypress
-</pre>
+    $ npm install -D cypress
 
 or
 
-<pre>
-$ npm install cypress --save-dev
-</pre>
+    $ npm install cypress --save-dev
 
 - --save-dev : node_modules에 패키지 설치 + package.json의 dependencies 추가
 - 위 두개의 차이점을 모르겠음
 
 ## Desktop App(GUI)으로 실행
 
-<pre>
-$ npx cypress open
-</pre>
+    $ npx cypress open
 
 or
 
-<pre>
-$ ./node_modules/.bin/cypress open
-</pre>
+    $ ./node_modules/.bin/cypress open
 
 - 실행하면 nutshell 열림
 - cypress 폴더 생김(구조는 아래와 같음)
-<pre>
-/cypress
-  /fixtures <b>테스트에서 사용되어지는 정적테이터</b>
-    - example.json
 
-  /integration <b>테스트 파일: .js .jsx .coffee .cjsx</b>
-    /examples
-      - actions.spec.js
-      - aliasing.spec.js
-      - assertions.spec.js
-      - connectors.spec.js
-      - cookies.spec.js
-      - cypress_api.spec.js
-      - files.spec.js
-      - local_storage.spec.js
-      - location.spec.js
-      - misc.spec.js
-      - navigation.spec.js
-      - network_requests.spec.js
-      - querying.spec.js
-      - spies_stubs_clocks.spec.js
-      - traversal.spec.js
-      - utilities.spec.js
-      - viewport.spec.js
-      - waiting.spec.js
-      - window.spec.js
+```
+  /cypress
+  /fixtures // 테스트에서 사용되어지는 정적테이터
+   - example.json
 
-  /plugins <b>테스트 파일(spec)이 실행되기 전에 자동적으로 포함됨</b>
-    - index.js
+  /integration // 테스트 파일: .js .jsx .coffee .cjsx
+   /examples
+     - actions.spec.js
+     - aliasing.spec.js
+     - assertions.spec.js
+     - connectors.spec.js
+     - cookies.spec.js
+     - cypress_api.spec.js
+     - files.spec.js
+     - local_storage.spec.js
+     - location.spec.js
+     - misc.spec.js
+     - navigation.spec.js
+     - network_requests.spec.js
+     - querying.spec.js
+     - spies_stubs_clocks.spec.js
+     - traversal.spec.js
+     - utilities.spec.js
+     - viewport.spec.js
+     - waiting.spec.js
+     - window.spec.js
 
-  /support <b>테스트 파일(spec)이 실행되기 전에 자동적으로 포함됨</b>
-    - commands.js
-    - index.js
-</pre>
+  /plugins // 테스트 파일(spec)이 실행되기 전에 자동적으로 포함됨
+   - index.js
+
+  /support // 테스트 파일(spec)이 실행되기 전에 자동적으로 포함됨
+   - commands.js
+   - index.js
+```
 
 ## CLI로 실행하기
 
-<pre>
-$ npx cypress run
-</pre>
+    $ npx cypress run
 
 ## VS Code extentions에서 'Cypress Snippets' install
-
-<br>
 
 ---
 

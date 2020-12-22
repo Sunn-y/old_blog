@@ -23,20 +23,22 @@ comment: true
 - cy.get().prev()
 - cy.get().next()
 - cy.get().first()
-- cy.get().eq(1) <b>index</b>
+- cy.get().eq(1) \_\_index\_\_
 - cy.get().last()
 
 ### # custom command
 
-<pre>
+```
 - Cypress.Commands.add("SignIn", () => {
-    //login 
+ //login
 })
-</pre>
+```
 
-<pre>
-cy.SignIn(); <b>다른 test에서 사용 가능</b>
-</pre>
+```
+
+cy.SignIn(); __다른 test에서 사용 가능__
+
+```
 
 ---
 
@@ -73,21 +75,17 @@ cy.SignIn(); <b>다른 test에서 사용 가능</b>
 - cy.get('textfield[placeholder='']')
 - cy.contains('cancel').click()
 - cy.url().should('include','article')
-<pre>
+<!--    ```
 cy.get('form').within(($form) => {
-    cy.get('input[type="email"].type.('test@test.com'))
-    cy.get('input[type="password"].type.('1234'))
+    cy.get('input[type="email"].type('test@test.com'))
+    cy.get('input[type="password"].type('1234'))
     cy.root().submit()
 })
-</pre>
+   ``` -->
 
 ---
 
-<br>
-
----
-
-### 출처
+#### 출처
 
 - [https://www.cypress.io/](https://www.cypress.io/)
 - [https://www.youtube.com/watch?v=Cgp7liVZh3s&list=PLzDWIPKHyNmK9NX9_ng2IdrkEr8L4WwB0&index=5](https://www.youtube.com/watch?v=Cgp7liVZh3s&list=PLzDWIPKHyNmK9NX9_ng2IdrkEr8L4WwB0&index=5)

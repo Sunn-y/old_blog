@@ -7,7 +7,7 @@ comment: true
 
 # # Cross platform : Flutter React Native 비교
 
-<hr>
+---
 
 |         Flutter         |    React Native    |
 | :---------------------: | :----------------: |
@@ -16,6 +16,6 @@ comment: true
 |      Java, Django       | JavaScript, React  |
 | 애니메이션, 100% 컨트롤 | 알림, 텍스트, ajax |
 
-<br>
-<hr>
+---
+
 출처: [https://www.youtube.com/watch?v=hHpA99botqs&vl=ko](https://www.youtube.com/watch?v=hHpA99botqs&vl=ko)
