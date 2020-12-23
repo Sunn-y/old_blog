@@ -207,6 +207,9 @@ main{
             font-size: x-large;
         }
     }
+    h1,h2,h3{
+        margin-top: 2em;
+    }
     h2 { 
         text-align: left; 
         text-indent: 1em;
@@ -221,6 +224,7 @@ main{
     hr{
         border: 0.5px solid $brown1;
         background-color: $brown1;
+        margin-bottom: 2em;
     }
     blockquote{
         margin: 0;
@@ -229,7 +233,6 @@ main{
         font-size: x-large;
         text-align: center;
         text-indent: 1em;
-        border-radius:3px; 
         border-top: $brown2 5px solid; 
         border-bottom: $brown2 5px solid; 
         background-color: rgba($yellow1,0.5);
@@ -243,7 +246,6 @@ main{
         line-height: 1.6rem;
         background-color: rgba($brown1, 0.3);
         color: $brown5;
-        border-radius: 0.5rem;
         overflow-y: hidden;
     }
     code{
@@ -253,8 +255,9 @@ main{
     }
 
     em{
-        color: $brown1;
-        background-color: $brown3;
+        color: $brown4;
+        font-weight: bold;
+        background-color: $yellow1;
         padding: 0.2em 0.8em;
         border-radius: 5px;
     }

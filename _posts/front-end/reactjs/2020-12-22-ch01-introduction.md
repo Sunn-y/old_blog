@@ -39,8 +39,4 @@ comment: true
 
 ---
 
-앞으로의 강의내용 : Fundamentals, http, Routing, Redux, Utilies
-
----
-
 출처 : [https://www.youtube.com/channel/UC80PWRj_ZU8Zu0HSMNVwKWw](https://www.youtube.com/channel/UC80PWRj_ZU8Zu0HSMNVwKWw)

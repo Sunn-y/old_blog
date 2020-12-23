@@ -21,9 +21,6 @@ comment: true
   - index.css
   - serviceWorker.js : for progressive app
 
----
-
-앞으로의 강의내용 : Fundamentals, http, Routing, Redux, Utilies
 
 ---
 

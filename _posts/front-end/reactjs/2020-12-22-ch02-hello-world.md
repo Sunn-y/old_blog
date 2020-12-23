@@ -29,9 +29,6 @@ comment: true
     $ npm install create-react-app -g
     $ create-react-app <project name>
 
----
-
-앞으로의 강의내용 : Fundamentals, http, Routing, Redux, Utilies
 
 ---
 
