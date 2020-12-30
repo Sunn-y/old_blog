@@ -69,3 +69,6 @@ test('input answer and rendering', () => {
 ```jsx
 $ npm test QnA-test.js
 ```
+
+---
+출처: (https://www.youtube.com/watch?v=CpTQb0XWlRc)[https://www.youtube.com/watch?v=CpTQb0XWlRc]
