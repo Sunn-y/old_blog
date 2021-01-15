@@ -1,0 +1,26 @@
+//welcome page
+.welcome-box {
+    overflow: hidden;
+    padding-top: calc((100vh - 350px) / 2);
+    line-height: 3rem;
+    font-family: $font1;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    
+    p {
+        font-size: 37px;
+        margin-top: 0;
+    }
+    
+    @media #{$small} {
+        padding-top: 30vh;
+        height: 70vh;
+        font-size: 15px;
+        line-height: 2rem;
+        p {
+            font-size: 20px;
+        }
+
+    }
+}

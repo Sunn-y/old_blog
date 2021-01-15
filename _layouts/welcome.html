@@ -1,28 +1,40 @@
----
-layout: default
----
-<div class="welcome_box center">
-    <br><br>
-    <i class="fas fa-quote-left" color="chocolate"></i>
-    <span class="s1">Your beliefs</span> <span class="s2">become</span>
-    <span class=s3> your thoughts,</span><br>
-    <span class="s1">Your thoughts</span> <span class="s2">become</span>
-    <span class=s3> your words,</span><br>
-    <span class="s1">Your words</span> <span class="s2">become</span>
-    <span class=s3> your actions,</span><br>
-    <span class="s1">Your actions</span> <span class="s2">become</span>
-    <span class=s3> your habits,</span><br>
-    <span class="s1">Your habits</span> <span class="s2">become</span>
-    <span class=s3> your values,</span><br>
-    <span class="s1">Your values</span> <span class="s2">become</span>
-    <span class=s3> your destiny.</span>
-    <i class="fas fa-quote-right" color="chocolate"></i>
-    <br><br>
-    <div>― Gandhi ―</div>
-</div>
-<br><br>
-    <header>
-       <h1 class="h1_title left"># Recent posts</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head> {% include head.html %} {% include scripts.html %} {% include tipuesearch.html %} </head>
+
+<body>
+    <div class="wrapper animated fadeIn">
+		{% include nav.html %}
+        <div class="welcome-box center">
+            <p>
+                Your beliefs become your thoughts,<br> 
+                Your thoughts become your words,<br> 
+                Your words become your actions,<br>
+                Your actions become your habits,<br> 
+                Your habits become your values,<br> 
+                Your values become your destiny.<br> 
+            </p> 
+            ― Gandhi ― 
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- <span class="s1">Your beliefs</span> <span class="s2">become</span>
+        <span class=s3> your thoughts,</span><br>
+        <span class="s1">Your thoughts</span> <span class="s2">become</span>
+        <span class=s3> your words,</span><br>
+        <span class="s1">Your words</span> <span class="s2">become</span>
+        <span class=s3> your actions,</span><br>
+        <span class="s1">Your actions</span> <span class="s2">become</span>
+        <span class=s3> your habits,</span><br>
+        <span class="s1">Your habits</span> <span class="s2">become</span>
+        <span class=s3> your values,</span><br>
+        <span class="s1">Your values</span> <span class="s2">become</span>
+        <span class=s3> your destiny.</span> -->
+<!-- <header>
+    <h1 class="h1_title left"># Recent posts</h1>
 {% for post in site.posts limit: 5%}
 <div class="post">
     <a href="{{post.url}}">
@@ -39,4 +51,4 @@ layout: default
         <div>{{ post.description }}</div>
     </a>
 </div>
-{% endfor %}
+{% endfor %} -->
