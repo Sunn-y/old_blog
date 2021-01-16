@@ -16,15 +16,15 @@ http://www.tipue.com/search
 } */
 #tipue_search_results_count, #tipue_search_warning, .tipue_search_content_url, .tipue_search_content_debug, .tipue_search_related_text
 {
-     font: 300 14px/1.7 Roboto, sans-serif;
+     font: 300 14px/1.7;
 }
 .tipue_search_content_title
 {
-     font: 100 26px/1.7 Roboto, sans-serif;
+     font: 100 26px/1.7;
 }
 .tipue_search_content_text, .tipue_search_related_title
 {
-     font: 300 15px/1.7 Roboto, sans-serif;
+     font: 300 15px/1.7;
 }
 .tipue_search_content_bold, .tipue_search_related_bold
 {
@@ -71,7 +71,14 @@ http://www.tipue.com/search
 {
      max-width: 750px;
 	padding-top: 15px;
-	margin: 0;
+     margin: 0;
+}
+
+#tipue_search_content nav{
+     background: none;
+     box-shadow: none;
+     float: none;
+     margin: 0 auto;
 }
 #tipue_search_results_count
 {
@@ -93,17 +100,20 @@ http://www.tipue.com/search
 }
 .tipue_search_content_title
 {
-     color: #666;    
-	margin-top: 21px;
+     color: salmon;    
+     margin-top: 21px;
+     margin-bottom: 10px;
+     font-size: x-large;
 }
 .tipue_search_content_title a
 {
-     color: #666;
+     color: salmon;
      text-decoration: none;
 }
 .tipue_search_content_title a:hover
 {
-     color: #666;
+     color: salmon;
+     text-decoration: underline;
 }
 .tipue_search_content_url
 {
@@ -112,23 +122,24 @@ http://www.tipue.com/search
 }
 .tipue_search_content_url a, .tipue_search_related_text a
 {
-     color: #5396ea;
+     color: lightsalmon;
      text-decoration: none;
 }
 .tipue_search_content_url a:hover, .tipue_search_related_text a:hover, .tipue_search_related_before, .tipue_search_related_after
 {
-     color: #555;   
+     color: lightsalmon;   
 }
 .tipue_search_content_text
 {
-	color: #333;
+	color: gray;
      word-wrap: break-word;
      hyphens: auto;
      margin-top: 5px;
 }
 .tipue_search_content_bold
 {
-     color: #333;
+     color: sandybrown;
+     font-weight: bold;
 }
 .tipue_search_content_debug
 {
@@ -191,6 +202,7 @@ http://www.tipue.com/search
 }
 
 
+
 /* spinner */
 
 
@@ -243,9 +255,3 @@ http://www.tipue.com/search
           -webkit-transform: scaleY(1.0);
      }
 }
-
-
-
-
-
-
