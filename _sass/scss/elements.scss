@@ -1,53 +1,44 @@
 //headings
 .h1_title {
-    color: $brown3;
+    color: $color5;
+    text-shadow: 1px 1px 2px $color2;
     text-align: center;
-    text-shadow: 1px 1px 2px $brown1;
-    @media #{$small} {
-        font-size: xx-large;
-    }
-};
-h1{
-    @media #{$small} {
-        font-size: x-large;
-    } 
+    font-size: 3em;
 }
 
-h2 { 
-    padding: 10px;
-    text-align: left; 
-    border-left: $brown2 8px solid; 
-    background-color: $brown1; 
-    border-radius:3px; 
-}
+;
 
 //hr
-hr{
-    border: 0.5px solid $brown2;
-    background-color: $brown2;
+hr {
+    border: 0.5px solid $color2;
+    background-color: $color2;
 }
-.hr50{
+
+.hr50 {
     width: 50%;
-    border: 0.5px solid $brown1;
+    border: 0.5px solid $color1;
 }
 
 //btns
-%button{
+%button {
     display: inline-block;
     padding: 5px;
     margin: 10px;
     background-color: rgba($brown2, 0.5);
-    &:hover{
+
+    &:hover {
         cursor: pointer;
         background-color: rgba($brown3, 0.2);
     }
 }
-.btn{
+
+.btn {
     @extend %button;
     border-radius: 3px;
     color: $brown2;
 }
-.social_btn{
+
+.social_btn {
     @extend %button;
     border-radius: 16px;
     color: white;
@@ -56,112 +47,137 @@ hr{
 }
 
 //a
-a{
+a {
     text-decoration: none;
 }
 
 //list
-%li_flat{
+%li_flat {
     list-style-type: none;
 }
 
 //display
-.flex{
+.flex {
     display: flex;
     flex-wrap: wrap;
 }
 
 
 //font
-@font-face{
+@font-face {
     font-family: 'kr';
     src: url(../../assets/fonts/THEHappyfruit.ttf);
-};
-@font-face{
+}
+
+;
+
+@font-face {
     font-family: 'en';
     src: url(../../assets/fonts/ShadowsIntoLight-Regular.ttf);
-};
-.font_sm{
+}
+@font-face {
+    font-family: 'code';
+    src: url(../../assets/fonts/FIRACODE-REGULAR.TTF);
+}
+
+
+.font_sm {
     font-size: 0.9rem;
-};
-.font_lg{
+}
+
+;
+
+.font_lg {
     font-size: 1.2rem;
-};
-.font_2x{
+}
+
+;
+
+.font_2x {
     font-size: 4rem;
 }
-.center{
+
+.center {
     text-align: center;
 }
-.left{
+
+.left {
     text-align: left;
 }
 
-.right{
+.right {
     text-align: right;
 }
 
 //img
-%img_align{
+%img_align {
     display: block;
     margin: 0 auto;
     border-radius: 10px;
 }
 
-.circle{
+.circle {
     @extend %img_align;
     border-radius: 10em;
-    width: 15em; 
+    width: 15em;
     height: 15em;
 }
-.xs_img{
+
+.xs_img {
     @extend %img_align;
-    width: 120px; 
+    width: 120px;
     height: 90px;
 }
 
-.sm_img{
+.sm_img {
     @extend %img_align;
-    width: 240px; 
+    width: 240px;
     height: 180px;
 }
-.sm_34_img{
+
+.sm_34_img {
     @extend %img_align;
-    width: 180px; 
+    width: 180px;
     height: 240px;
 }
-.md_img{
+
+.md_img {
     @extend %img_align;
-    width: 480px; 
+    width: 480px;
     height: 360px;
-    @media #{$small}{
+
+    @media #{$small} {
         width: 100%;
         height: auto;
     }
 }
-.md_34_img{
+
+.md_34_img {
     @extend %img_align;
-    width: 360px; 
+    width: 360px;
     height: 480px;
-    @media #{$small}{
+
+    @media #{$small} {
         width: 100%;
         height: auto;
     }
 }
-.lg_img{
+
+.lg_img {
     @extend %img_align;
-    width: 720px; 
+    width: 720px;
     height: 540px;
-    @media #{$small}{
+
+    @media #{$small} {
         width: 100%;
         height: auto;
     }
 }
 
 //tags
-.tag{
-    padding: 0 5px;
-    background-color: $brown1;
+.tag {
+    padding: 0 10px;
+    background-color: rgba($color1, 0.3);
     border-radius: 5px;
-    color: $brown3;
+    color: $color4;
 }
