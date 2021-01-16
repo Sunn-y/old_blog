@@ -26,7 +26,7 @@ console.log('C');
 
 ---
 
-# #Callback function
+# Callback function
 
 ```jsx
 var a = function(){
@@ -60,7 +60,7 @@ console.log(numbers.sort(sortfunc));
 
 ---
 
-# #Ajax
+# Ajax
 
 ```jsx
 $.get('url', function(result){ console.log(result); }, 'json');

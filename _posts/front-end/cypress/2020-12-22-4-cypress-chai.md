@@ -5,17 +5,17 @@ tags: [test, cypress]
 comment: true
 ---
 
-# # Cypress built-in Assertions : Chai
+# Cypress built-in Assertions : Chai
 
 ---
 
-# # chai assertion library
+# chai assertion library
 
-## # BDD styles : expect, should. [(API 바로가기)](https://www.chaijs.com/api/bdd/)
+## BDD styles : expect, should. [(API 바로가기)](https://www.chaijs.com/api/bdd/)
 
 - expect : expect(element)
 
-### # Chains
+### Chains
 
 - to
 - be
@@ -43,7 +43,7 @@ comment: true
 - .ordered
 - .any
 
-## # TDD styles : assert [(API 바로가기)](https://www.chaijs.com/api/assert/)
+## TDD styles : assert [(API 바로가기)](https://www.chaijs.com/api/assert/)
 
 ---
 

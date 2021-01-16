@@ -177,7 +177,8 @@ a {
 //tags
 .tag {
     padding: 0 10px;
-    background-color: rgba($color1, 0.3);
-    border-radius: 5px;
-    color: $color4;
+    background-color: rgba($color1, 0.2);
+    box-shadow: 1px 1px 3px $color2;
+    border-radius: 3px;
+    color: sandybrown;
 }

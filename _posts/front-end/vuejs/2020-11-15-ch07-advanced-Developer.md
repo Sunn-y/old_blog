@@ -5,7 +5,7 @@ tags: [doit]
 comment: true
 ---
 
-## # 뷰 중고급으로 올라가기 위한 지식
+## 뷰 중고급으로 올라가기 위한 지식
 
 - Vuex: 상태관리 라이브러리
 
@@ -27,7 +27,7 @@ comment: true
   - server side rendering: 완벽하게 그려진 HTML을 브라우저에서 받는 것
   - 검색 엔진 최적화(SEO, Search Engine Optimization)
 
-# #뷰 개발을 위한 웹팩
+# 뷰 개발을 위한 웹팩
 
 ---
 
@@ -51,7 +51,7 @@ comment: true
   - in memory 기반. 메모리 상에 빌드 결과물이 저장되서 빠르게 읽음
   - webpack.config.js
 
-# #뷰 개발을 위한 ES6
+# 뷰 개발을 위한 ES6
 
 ---
 
@@ -62,7 +62,7 @@ comment: true
 - Import
 - export
 
-# #뷰 CLI에서 사용하는 NPM
+# 뷰 CLI에서 사용하는 NPM
 
 ---
 

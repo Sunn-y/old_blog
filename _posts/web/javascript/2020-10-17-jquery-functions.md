@@ -5,7 +5,7 @@ tags: [jquery]
 comment: true
 ---
 
-# #나 보려고 정리한 제이쿼리 함수 리스트
+# 나 보려고 정리한 제이쿼리 함수 리스트
 
 | 내용                    | 함수                                  | return              |
 | ----------------------- | ------------------------------------- | ------------------- |
@@ -28,7 +28,7 @@ comment: true
 | display none 해제       | $('div').show()                       |
 | show + hide 기능을 둘다 | $('div').toggle()                     |
 
-# # 이벤트 함수
+# 이벤트 함수
 
 ---
 
@@ -43,7 +43,7 @@ comment: true
 9. focus() / blur()
 10. focusIn() / focusOut()
 
-# # 애니메이션 효과
+# 애니메이션 효과
 
 ---
 
@@ -52,7 +52,7 @@ comment: true
 3. animate() / stop()
 4. rotate()
 
-# # 객체 찾기
+# 객체 찾기
 
 ---
 
@@ -62,7 +62,7 @@ comment: true
 4. children()
 5. siblings()
 
-# # 기타
+# 기타
 
 ---
 

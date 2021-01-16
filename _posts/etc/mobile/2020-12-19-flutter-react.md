@@ -5,7 +5,7 @@ tags: [cross platform]
 comment: true
 ---
 
-# # Cross platform : Flutter React Native 비교
+# Cross platform : Flutter React Native 비교
 
 ---
 

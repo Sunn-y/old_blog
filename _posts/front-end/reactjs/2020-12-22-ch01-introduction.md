@@ -5,7 +5,7 @@ tags: [react, front]
 comment: true
 ---
 
-# # React란
+# React란
 
 ---
 

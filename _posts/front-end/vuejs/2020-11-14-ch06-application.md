@@ -5,12 +5,12 @@ tags: [doit]
 comment: true
 ---
 
-## # To Do List Application 개요
+## To Do List Application 개요
 
 - local strorage에 데이터 저장(f12 > application)
 - 구조: header, input, list, footer
 
-# #프로젝트 생성 및 구조확인
+# 프로젝트 생성 및 구조확인
 
 ---
 
@@ -22,7 +22,7 @@ comment: true
 6. Font 변경
 7. favicon 변경(웹사트 제목의 왼쪽 로고)
 
-# #컴포넌트 생성 및 등록
+# 컴포넌트 생성 및 등록
 
 ---
 
@@ -31,7 +31,7 @@ comment: true
 - App.vue에 components import
 - ES5 는 var TodoHeader = {}, ES6는 import
 
-# #컴포넌트 내용 구현
+# 컴포넌트 내용 구현
 
 ---
 
@@ -50,14 +50,14 @@ comment: true
 - 모두 삭제하는 버튼만들기
 - localStorage.clear()
 
-# #기존 애플리케이션 문제해결
+# 기존 애플리케이션 문제해결
 
 ---
 
 - update 되는 내용이 바로 반영되지 않음
 - v-on과 $emit 이용하기
 
-# #기능 추가
+# 기능 추가
 
 ---
 

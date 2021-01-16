@@ -1,3 +1,10 @@
+//extend
+%h-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: 1.5em;
+}
+
 //post page
 .post_title {
     color: $color5;
@@ -11,14 +18,16 @@
 
 .post_desc {
     margin: 1.5em;
+    color: $color3;
 }
 
 ;
 
 .post_content {
-    color: $black3;
+    color: $black2;
     font-family: $font2;
     font-size: large;
+    word-break: break-all;
 
     //href 
     a {
@@ -29,6 +38,33 @@
             color: $color5;
         }
 
+    }
+
+    ol,
+    ul {
+        list-style-position: inside;
+
+        li {
+            text-indent: -2em;
+
+            ol,
+            ul {
+                list-style-position: inside;
+
+                li {
+                    text-indent: -2.5em;
+
+                    ol,
+                    ul {
+                        list-style-position: inside;
+
+                        li {
+                            text-indent: -2.5em;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     //img
@@ -43,11 +79,39 @@
         }
     }
 
+    h1 {
+        @extend %h-img;
+        background-image: url('/assets/img/star.png');
+    }
+    
+    h2 {
+        @extend %h-img;
+        background-image: url('/assets/img/check.png');
+    }
+
+    
+    h3 {
+        @extend %h-img;
+        background-image: url('/assets/img/right-arrow.png');
+    }
+
+    
+    h4 {
+        @extend %h-img;
+        background-image: url('/assets/img/warn.png');
+    }
+
+
     h1,
     h2,
-    h3 {
+    h3,
+    h4,
+    h5,
+    h6 {
         color: $black1;
         margin-top: 2em;
+        margin-bottom: 0;
+        line-height: 1.3em;
     }
 
     hr {
@@ -57,61 +121,38 @@
     }
 
     blockquote {
-
-        // text-align: left;
-        // text-indent: 1em;
-        // background-color: red;
-        // border-radius: 3px;
-        // border-left: $brown4 10px solid;
-        // margin: 0;
-        // padding: 0.2em;
-        // color: $brown5;
-        // font-size: x-large;
-        // text-align: center;
-        // text-indent: 1em;
-        // border-top: $brown2 5px solid;
-        // border-bottom: $brown2 5px solid;
-        // background-color: rgba($yellow1, 0.5);
-
-        @media #{$small} {
-            font-size: large;
-        }
+        padding: 1em 2em;
+        color: $color4;
+        font-family: $font2;
+        text-align: left;
+        background-color: rgba($color1, 0.3);
+        border-radius: 3px;
+        border-left: $color1 10px solid;
     }
 
     pre {
         padding: 2rem;
         text-align: left;
-        background-color: rgba($color1, 0.3);
-        border-radius: 3px;
-        border-left: $color2 10px solid;
+        background-color: rgba($black1, 0.9);
+        box-shadow: 1px 1px 2px rgba($black1, 0.7);
+        border-radius: 4px;
         overflow-x: auto;
 
         &::-webkit-scrollbar {
             height: 5px;
         }
 
-        &::-webkit-scrollbar-track {
-            background-color: rgba($color1, 0.5);
-        }
-
         &::-webkit-scrollbar-thumb {
-            background-color: rgba($color2, 0.5);
+            background-color: white;
             height: 3px;
             border-radius: 3px;
-        }
-
-        &::-webkit-scrollbar-button:start:decrement,
-        &::-webkit-scrollbar-button:end:increment {
-            width: 3px;
-            height: 3px;
-            background: $color1;
         }
     }
 
     code {
         font-family: $font3, $font2;
         font-size: medium;
-        color: $black1;
+        color: white;
     }
 
     em {
@@ -124,26 +165,32 @@
 
     b,
     strong {
-        color: $brown3;
+        color: $color5;
     }
 
     table {
         border-collapse: collapse;
+        width: 100%;
         margin: 3em 0;
 
         th,
         td {
-            padding: 1em 2em;
-            overflow-x: hidden;
+            padding: 1em;
+            text-align: center;
+        }
+
+        tr:nth-child(2n) {
+            background-color: rgba($color1, 0.1);
+        }
+
+        tr:nth-child(2n+1) {
+            background-color: rgba($color1, 0.3);
         }
 
         th {
-            border-bottom: 2px solid $brown2;
-            color: $brown3;
-        }
-
-        td {
-            border-bottom: 2px solid $brown1;
+            border-bottom: 2px solid $color2;
+            background-color: rgba($color1, 0.7);
+            color: $color4;
         }
     }
 }
@@ -170,31 +217,11 @@
     }
 }
 
-.post {
-    border: 5px solid $brown1;
-    border-radius: 10px;
-    margin-bottom: 2em;
-    padding: 2em;
+.go-back {
+    margin-right: 30px;
 
     &:hover {
-        background-color: rgba($brown1, 0.5);
-        border-radius: 5px;
+        text-decoration: underline;
         cursor: pointer;
-
-        h3 {
-            text-decoration: underline;
-        }
-    }
-
-    .inline {
-        @media #{$small} {
-            display: block;
-            margin-bottom: 10px;
-        }
-    }
-
-    .block {
-        display: block;
-        margin-bottom: 10px;
     }
 }

@@ -5,7 +5,7 @@ tags: [test, cypress]
 comment: true
 ---
 
-### # url
+### url
 
 - cy.url()
 - cy.go('back') or -1
@@ -14,7 +14,7 @@ comment: true
 
 ---
 
-### # identify Elements
+### identify Elements
 
 - cy.get().parent()
 - cy.get().parentUntil()
@@ -26,7 +26,7 @@ comment: true
 - cy.get().eq(1) \_\_index\_\_
 - cy.get().last()
 
-### # custom command
+### custom command
 
 ```
 - Cypress.Commands.add("SignIn", () => {
@@ -42,7 +42,7 @@ cy.SignIn(); __다른 test에서 사용 가능__
 
 ---
 
-### # Mocha Hooks : setup and teardown
+### Mocha Hooks : setup and teardown
 
 - before
 - after
@@ -51,7 +51,7 @@ cy.SignIn(); __다른 test에서 사용 가능__
 
 ---
 
-### # and so on
+### and so on
 
 - cy.visit('url'): url로 이동
 - cy.get('elements'): 태그이름, 아이디, 클래스

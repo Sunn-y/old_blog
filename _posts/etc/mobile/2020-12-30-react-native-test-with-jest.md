@@ -6,14 +6,14 @@ comment: true
 ---
 
 
-# #Install
+# Install
 
 ```jsx
 $ npm install @testing-library/jest-native @testing-library/react-native 
 							react-native-gesture-handler
 ```
 
-# #package.json
+# package.json
 
 ```jsx
 "jest": {
@@ -38,7 +38,7 @@ $ npm install @testing-library/jest-native @testing-library/react-native
   }
 ```
 
-# #QnA-test.js
+# QnA-test.js
 
 ```jsx
 import React from 'react';
@@ -64,7 +64,7 @@ test('input answer and rendering', () => {
 });
 ```
 
-# #Test
+# Test
 
 ```jsx
 $ npm test QnA-test.js

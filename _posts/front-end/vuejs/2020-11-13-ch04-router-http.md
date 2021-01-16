@@ -5,7 +5,7 @@ tags: [doit]
 comment: true
 ---
 
-## # Vue Router
+## Vue Router
 
 - Routing: 웹페이지 간의 이동방법
 - SPA(Single Page Application): 페이지들을 미리 받아놓고 라우팅을 이용하여 화면을 갱신하는 애플리케이션
@@ -24,7 +24,7 @@ comment: true
 
   - routes > components 속성, router-view태그의 name 속성 이용
 
-# #Vue HTTP통신
+# Vue HTTP통신
 
 ---
 

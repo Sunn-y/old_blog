@@ -5,7 +5,7 @@ tags: [cross platform, react native]
 comment: true
 ---
 
-# # React-Native 란
+# React-Native 란
 
 ---
 
@@ -14,19 +14,19 @@ comment: true
 
 ---
 
-### # 서버, 에뮬레이터 실행
+### 서버, 에뮬레이터 실행
 
 ```
 $ npx react-native start
 ```
 
-### # 다른 터미널에서
+### 다른 터미널에서
 
 ```
 $ npx react-native run-android
 ```
 
-### # 프로젝트 안에 App.js 열고 입력
+### 프로젝트 안에 App.js 열고 입력
 
 ```
 import React from 'react';

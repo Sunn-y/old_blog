@@ -5,7 +5,7 @@ tags: [doit]
 comment: true
 ---
 
-## # Vue Instance
+## Vue Instance
 
 - Vue로 개발하기 위해 꼭 만들어야 하는 기본단위
 - 속성(el, template, created, methods 등)
@@ -37,7 +37,7 @@ beforeCreate -> created -> beforeMount -> mounted -> beforeUpdate -> updated -> 
 
 <img src="https://kr.vuejs.org/images/lifecycle.png" alt="vuelifecycle.jpg" width="200">
 
-# #Vue Component
+# Vue Component
 
 ---
 
@@ -53,7 +53,7 @@ beforeCreate -> created -> beforeMount -> mounted -> beforeUpdate -> updated -> 
 
 - 지역 컴포넌트: vue 인스턴스 안에 생성
 
-# #Vue Component 통신
+# Vue Component 통신
 
 ---
 

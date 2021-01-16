@@ -5,7 +5,7 @@ tags: [test, cypress]
 comment: true
 ---
 
-# # then()
+# then()
 
 ---
 

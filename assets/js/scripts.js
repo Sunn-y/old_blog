@@ -67,4 +67,9 @@ $(document).ready(function () {
   $(".post").mouseleave(function () {
     $(this).removeClass("pulse");
   });
+
+  //go to list
+  $(".go-back").click(function(){
+    window.history.back();
+  });
 });

@@ -5,7 +5,7 @@ tags: [test, cypress]
 comment: true
 ---
 
-# # Set up / Installation
+# Set up / Installation
 
     $ npm install -D cypress
 

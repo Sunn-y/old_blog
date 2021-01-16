@@ -1,0 +1,18 @@
+//about
+.about_box {
+    clear: both;
+    font-family: $font2;
+    font-size: larger;
+    word-break: break-all;
+    margin: 0 auto;
+
+    h1 {
+        line-height: 1.5em;
+        word-break: keep-all;
+    }
+
+    span{
+        word-break: keep-all;
+    }
+    
+}

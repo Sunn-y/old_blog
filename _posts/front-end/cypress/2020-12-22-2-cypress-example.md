@@ -5,7 +5,7 @@ tags: [test, cypress]
 comment: true
 ---
 
-# # cypress 예제
+# cypress 예제
 
 ---
 
@@ -13,9 +13,9 @@ comment: true
 cy.<command>
 ```
 
-#### # cy.커멘드 입력하면 사용가능
+#### cy.커멘드 입력하면 사용가능
 
-#### # cypress는 **chaining API**(subject is passed through the chain)
+#### cypress는 **chaining API**(subject is passed through the chain)
 
 ### ex) 예시1
 
