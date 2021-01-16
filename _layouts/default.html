@@ -22,10 +22,12 @@
 		<div class="main-container animated fadeIn">
 			<i class="fas fa-bars fa-2x nav_toggle"></i>
 			<main>
-				{{ content }}
-				{% if page.comment %}
-				{% include comments.html %}
-				{% endif %}
+				<div class="main-content">
+					{{ content }}
+					{% if page.comment %}
+					{% include comments.html %}
+					{% endif %}
+				</div>
 			</main>
 		</div>
 		{% endif %}

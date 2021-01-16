@@ -54,7 +54,7 @@ body {
 main {
     background-color: rgba(white, 0.95);
     margin: 0 70px;
-    padding: 2em 0 2em 0;
+    padding: 70px 0;
     width: 100%;
     height: 100%;
     overflow-y: auto;
@@ -96,6 +96,18 @@ main {
         }
     }
 
+}
+
+.main-content {
+    width: calc(100% - 140px);
+    height: 100%;
+    padding: 70px 70px;
+    overflow-x: hidden;
+    
+    @media (max-width: 950px) {
+        width: calc(100% - 60px);
+        padding: 70px 30px;
+    }
 }
 
 
