@@ -26,7 +26,7 @@ layout: page
                         {% if subitem.slug == i.categories.last%}
                             <tr>
                                 <td><a href="{{ i.url}}">{{i.title}}</a></td>
-                                <td>{{i.date | date:"%Y-%m-%d"}}</td>
+                                <td><i class="far fa-calendar"></i> {{i.date | date:"%Y-%m-%d"}}</td>
                             </tr>
                         {% endif %}
                     {% endfor %}
