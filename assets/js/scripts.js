@@ -1,7 +1,7 @@
 $(document).ready(function () {
   //animated rendering
-  if ($(".container").hasClass("fadeOut")) {
-    $(".container").removeClass("fadeOut").addClass("fadeIn");
+  if ($(".main-container").hasClass("fadeOut")) {
+    $(".main-container").removeClass("fadeOut").addClass("fadeIn");
   }
   if ($(".wrapper").hasClass("fadeOut")) {
     $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
@@ -40,18 +40,13 @@ $(document).ready(function () {
   // naviagation toggle
   $(".nav_toggle").click(function () {
     if ($("nav").css("display") == "none") {
-      // $("nav").css("width", "350px");
-      // $(".search").css("width", "350px");
-      // $(".logo").css("width", "350px");
-      // $("footer").css("width", "350px");
-      // $(".wrapper").css("background", "rgba(black,0.3)");
       $("nav").show();
+      $(".main-container").css("width", "calc(100% - 250px)");
+      $(".nav_toggle").css("left", "239px");
     } else {
-      // $("nav").css("width", "25%");
-      // $(".search").css("width", "25%");
-      // $(".logo").css("width", "25%");
-      // $("footer").css("width", "25%");
       $("nav").hide();
+      $(".main-container").css("width", "100%");
+      $(".nav_toggle").css("left", "5px");
     }
   });
 

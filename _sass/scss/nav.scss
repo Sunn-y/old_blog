@@ -1,18 +1,20 @@
 nav {
-    float: left;
-    width: 240px;
+    width: 250px;
     margin: 0;
-    padding: 0 0 15px 0;
-    height: 100vh;
+    padding: 0;
+    height: 100%;
     overflow: hidden;
-    z-index: 3;
-    background-color: rgba($black3, 0.9);
-    box-shadow: 1px 1px 7px black;
+    background-color: $black2;
+    box-shadow: 1px 1px 7px $black3;
     display: none;
+    float: left;
+
+    @media #{$small} {
+        float: none;
+    }
 
     @media #{$x_large} {
         display: block;
-        font-size: .85rem;
     }
 
     li {
@@ -22,6 +24,7 @@ nav {
     .logo {
         text-align: center;
         text-shadow: 1px 1px 1px $brown2;
+        padding-top: 1em;
         padding-bottom: 1.6em;
         border-bottom: rgba(white, 0.3) solid 2px;
 
@@ -47,7 +50,7 @@ nav {
     .main {
         margin: 0;
         padding: 0.2em 1.5em;
-        height: calc(100vh - 190px);
+        height: calc(100% - 215px);
         color: white;
         font-size: x-large;
         overflow-y: auto;
@@ -96,12 +99,13 @@ nav {
 
     footer {
         margin-top: 1em;
+        margin-bottom: 0.5em;
         text-align: center;
         position: relative;
         left: 0;
         width: 100%;
         color: white;
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
 }
 
@@ -152,24 +156,26 @@ input[type=checkbox]+label {
             color: rgba(white, 0.7);
         }
     }
-
-    // .search_btn {
-    //     color: $brown2;
-    // }
-
-    // @media #{$small} {
-    //     bottom: 70px;
-    // }
 }
 
 .nav_toggle {
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
+    top: 5px;
+    left: 5px;
+    z-index: 10;
+    color:$color1;
+
+    &:hover {
+        color: $color2;
+        cursor: pointer;
+    }
+
+    @media (max-width: 950px) {
+        left: 5px;
+    }
 
     @media #{$x_large} {
-        visibility: hidden;
+        left: 239px;
     }
 }
 

@@ -10,15 +10,25 @@
 <body>
 	<div class="wrapper animated fadeIn">
 		{% include nav.html %}
-		<main>
-			<div class="container animated fadeIn">
+
+		{% if page.title == 'HOME' %}
+		<i class="fas fa-bars fa-2x nav_toggle"></i>
+		<div class="main-container animated fadeIn">
+			{{ content }}
+		</div>
+		{% endif %}
+
+		{% if page.title != 'HOME' %}
+		<div class="main-container animated fadeIn">
+			<i class="fas fa-bars fa-2x nav_toggle"></i>
+			<main>
 				{{ content }}
 				{% if page.comment %}
 				{% include comments.html %}
 				{% endif %}
-			</div>
-		</main>
-		<i class="fas fa-bars fa-2x btn nav_toggle"></i>
+			</main>
+		</div>
+		{% endif %}
 		<i class="fas fa-arrow-up fa-2x btn goup"></i>
 	</div>
 </body>
