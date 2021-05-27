@@ -1,5 +1,5 @@
 nav {
-    width: 250px;
+    width: 300px;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ nav {
         a {
             height: 100%;
             color: $color1;
-            font-size: 35px;
+            font-size: 52px;
 
             &:hover {
                 color: $color2;
@@ -39,7 +39,7 @@ nav {
         }
 
         img {
-            height: 40px;
+            height: 48px;
             margin-left: -10px;
             margin-bottom: -10px;
         }
@@ -49,10 +49,10 @@ nav {
 
     .main {
         margin: 0;
-        padding: 0.2em 1.5em;
+        padding: 0.5em 1em;
         height: calc(100% - 215px);
         color: white;
-        font-size: x-large;
+        font-size: 36px;
         overflow-y: auto;
 
         &::-webkit-scrollbar {
@@ -82,7 +82,7 @@ nav {
     }
 
     .sub {
-        font-size: large;
+        font-size: 24px;
         text-indent: -1em;
         display: none;
     }
@@ -113,7 +113,7 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]+label {
-    font-size: small;
+    font-size: 24px;
 
     &:hover {
         cursor: pointer;
@@ -123,8 +123,8 @@ input[type=checkbox]+label {
 
 
 .search {
-    padding: 5px;
-    margin: 0 auto;
+    padding-left: 8px;
+    margin: 0;
     width: 90%;
     text-align: center;
     height: 2em;
@@ -138,7 +138,7 @@ input[type=checkbox]+label {
     .search_input {
         color: white;
         font-family: $font2;
-        font-size: large;
+        font-size: 24px;
         border: none;
         border-bottom: solid 2px white;
         padding: 0;
@@ -175,7 +175,7 @@ input[type=checkbox]+label {
     }
 
     @media #{$x_large} {
-        left: 245px;
+        left: 295px;
     }
 }
 

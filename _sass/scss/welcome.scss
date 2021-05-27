@@ -2,19 +2,19 @@
 .welcome-box {
     width: 100%;
     margin: 0 auto;
-    line-height: 3rem;
     font-family: $font1;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 32px;
     color: white;
     
     p {
-        font-size: 37px;
+        font-size: 56px;
+        line-height: 5rem;
         margin-top: 0;
     }
     
     @media #{$small} {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 2rem;
         p {
             font-size: 20px;

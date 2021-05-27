@@ -34,8 +34,8 @@ $(document).ready(function () {
   $(".nav_toggle").click(function () {
     if ($("nav").css("display") == "none") {
       $("nav").show();
-      $(".main-container").css("width", "calc(100% - 250px)");
-      $(".nav_toggle").css("left", "245px");
+      $(".main-container").css("width", "calc(100% - 300px)");
+      $(".nav_toggle").css("left", "295px");
     } else {
       $("nav").hide();
       $(".main-container").css("width", "100%");
